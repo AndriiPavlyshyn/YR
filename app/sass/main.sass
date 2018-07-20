@@ -1,0 +1,150 @@
+@import "_plugins/_normalize"
+@import "_plugins/_animate"
+@import "_plugins/_custom-animations"
+@import "vars"
+@import "fonts"
+@import "libs"
+@import "smart-grid"
+
+/* Components */
+
+@import "_components/buttons"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	background: #fff
+	font-family: $default-font
+	font-size: 16px
+	line-height: 1.65
+	min-width: 320px
+	overflow-x: hidden
+	position: relative
+
+	input,
+	textarea
+		border: #666 1px solid
+		outline: none
+
+		&:focus:required:invalid
+			border-color: red
+
+			&:required:valid
+				border-color: violet
+
+.img-responsive
+	display: block
+	height: auto
+	max-width: 100%
+
+a:focus,
+a:active
+	outline: none
+
+// Fix of full modal paddings
+
+.uk-modal-full
+	padding: 0
+
+/* Header */
+
+@import "_components/_header/header"
+
+//Cart
+@import "_components/_header/cart"
+
+//Tabs
+@import "_components/_tabs/tabs"
+
+// Sliders
+@import "_components/_sliders/full-width-slider"
+@import "_components/_sliders/full-width-margin-slider"
+@import "_components/_sliders/full-width-card-slider"
+@import "_components/_sliders/full-width-caption-slider"
+@import "_components/_sliders/full-width-product-slider"
+
+// Slideshows
+
+@import "_components/_slideshows/slideshow--overlays"
+@import "_components/_slideshows/slideshow--overlays-sides"
+@import "_components/_slideshows/slideshow--parallax"
+@import "_components/_slideshows/slideshow--zoom"
+
+// Countdown ( timer )
+
+@import "_components/_countdown/countdown"
+
+//Lightboxes
+
+@import "_components/_lightboxes/lightbox--caption"
+@import "_components/_lightboxes/lightbox--fade"
+@import "_components/_lightboxes/lightbox--no-caption"
+@import "_components/_lightboxes/lightbox--scale"
+@import "_components/_lightboxes/lightbox--slide"
+
+//Lists
+
+@import "_components/_lists/list--bullet"
+@import "_components/_lists/list--divider"
+@import "_components/_lists/list--striped"
+
+// Markers
+
+@import "_components/_markers/markers"
+
+// Modals
+
+@import "_components/_modals/modal--full"
+@import "_components/_modals/modal"
+
+// Notifications
+
+@import "_components/_notifications/notifications"
+
+// Overlays
+
+@import "_components/_overlays/overlays"
+
+// Pagination
+
+@import "_components/_pagination/pagination"
+@import "_components/_pagination/pagination--next-prev"
+
+// Parallax
+
+@import "_components/_parallax/parallax--background"
+
+// Leader
+
+@import "_components/_leader/leader"
+
+// Filter
+
+@import "_components/_filter/filter"
+
+// Dropdown
+
+@import "_components/_dropdown/dropdown--offset"
+@import "_components/_dropdown/dropdown"
+
+// Accordion
+
+@import "_components/_accordion/accordion"
+
+// Sidebar
+
+@import "_components/_sidebar/sidebar--fixed"
+
+/* For develop */
+
+.margin
+	height: 3000px
+	width: 100%
+
+// Always at the end
+@import "media"

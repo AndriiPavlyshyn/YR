@@ -1,0 +1,125 @@
+
+<div class="yr__page-wrapper uk-offcanvas-content">
+
+	<header class="yr__header @@class uk-preserve-color">
+		<div class="yr__navbar-container" uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-dark; top: 200">
+
+			<nav class="uk-navbar-container">
+				<div class="uk-container uk-container-expand">
+					<div class="yr__navbar" uk-navbar>
+
+						@@if (nav === true) {
+							<ul class="yr__lg-nav uk-navbar-nav">
+								<li class="uk-active">
+									<a href="#">Active</a>
+								</li>
+								<li>
+									<a href="#">Parent</a>
+									<div class="uk-navbar-dropdown">
+										<ul class="uk-nav uk-navbar-dropdown-nav">
+											<li class="uk-active">
+												<a href="#">Active</a>
+											</li>
+											<li>
+												<a href="#">Item</a>
+											</li>
+											<li>
+												<a href="#">Item</a>
+											</li>
+										</ul </div>
+								</li>
+								<li>
+									<a href="#">Two Columns</a>
+									<div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
+										<div class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
+											<div>
+												<ul class="uk-nav uk-navbar-dropdown-nav">
+													<li class="uk-active">
+														<a href="#">Active</a>
+													</li>
+													<li>
+														<a href="#">Item</a>
+													</li>
+													<li class="uk-nav-header">Header</li>
+													<li>
+														<a href="#">Item</a>
+													</li>
+													<li>
+														<a href="#">Item</a>
+													</li>
+													<li class="uk-nav-divider"></li>
+													<li>
+														<a href="#">Item</a>
+													</li>
+												</ul>
+											</div>
+											<div>
+												<ul class="uk-nav uk-navbar-dropdown-nav">
+													<li class="uk-active">
+														<a href="#">Active</a>
+													</li>
+													<li>
+														<a href="#">Item</a>
+													</li>
+													<li class="uk-nav-header">Header</li>
+													<li>
+														<a href="#">Item</a>
+													</li>
+													<li>
+														<a href="#">Item</a>
+													</li>
+													<li class="uk-nav-divider"></li>
+													<li>
+														<a href="#">Item</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a href="#">Item</a>
+								</li>
+							</ul>
+							<!-- /uk-navbar-nav -->
+						}
+
+						<div class="yr__logo-wrapper uk-flex">
+							<div class="logo__name-wrapper">
+								<h3 class="logo__text-h3 logo__text-h3--after">Yaniv Refael</h3>
+								<h3 class="logo__text-h3">Yaniv Refael</h3>
+							</div>
+							<a class="yr__logo uk-navbar-item uk-logo" href="#">Logo</a>
+						</div>
+
+						<!-- /uk-navbar-center -->
+
+						<div class="uk-navbar-right">
+							<div class="yr__burger uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-overlay"></div>
+						</div>
+
+							<div class="yr__nav-overlay nav-overlay uk-navbar-right">
+
+								@@if (cart === true) {
+									<a class="yr__cart uk-navbar-toggle" uk-icon="cart" href="#yr__modal-cart" uk-toggle><span class="yr__cart-badge uk-badge">200</span></a>
+								}
+
+								@@if (search === true) {
+									<a class="uk-navbar-toggle" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+								}
+							</div>
+							@@if (search === true) {
+								@@include('./_header/_search.html')
+							}
+
+							@@if (cart === true) {
+							 	@@include('./_header/_cart.html')
+							}
+						</div>
+						<!-- /uk-container-expand -->
+					</div>
+					<!-- /yr__navbar-container -->
+				</nav>
+			</div>
+		</header>
+		<!-- /yr__header -->

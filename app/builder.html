@@ -1,0 +1,605 @@
+@@include('./_parts/_head.html', { "pagetitle": "Builder", "bodyclass": "" })
+
+<!-- Custom HTML -->
+
+<style>
+	.builder__header--no-nav {
+		padding: 60px 0;
+	}
+
+	.builder__header--no-nav .yr__navbar-container .uk-navbar-container.uk-navbar-sticky .uk-container .uk-navbar .uk-navbar-center .yr__logo {
+		display: none;
+	}
+</style>
+
+@@include('./_parts/_header.html', {
+  "search": false,
+  "cart": false,
+	"nav": false,
+  "class": "builder__header--no-nav"
+})
+
+<style>
+	.builder__item {
+		min-height: 75vh;
+		height: 75vh;
+		max-height: 75vh;
+	}
+
+	.builder__container {
+		position: relative;
+		float: left;
+		width: 100%;
+	}
+
+	.builder__tabs--h_a .builder__item {
+		height: auto;
+		min-height: auto;
+		min-height: auto;
+	}
+
+	.builder__h1 span {
+		line-height: 1.4;
+	}
+
+</style>
+
+<div class="uk-container">
+
+	<div class="yr__sidebar-wrapper">
+		<div class="yr__sidebar uk-card-body uk-visible@l" style="z-index: 980;" uk-sticky="offset: 100; bottom: #top">
+			<ul class="yr__sidebar-nav uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true; offset: 100">
+				<li>
+					<a href="#builder__sliders">Sliders</a>
+				</li>
+				<li>
+					<a href="#builder__slideshows">Slideshows</a>
+				</li>
+				<li>
+					<a href="#builder__parallax">Parallax</a>
+				</li>
+				<li>
+					<a href="#builder__paginations">Paginations</a>
+				</li>
+				<li>
+					<a href="#builder__tabs">Tabs</a>
+				</li>
+				<li>
+					<a href="#builder__countdown">Countdown</a>
+				</li>
+				<li>
+					<a href="#builder__overlays">Overlays</a>
+				</li>
+				<li>
+					<a href="#builder__notifications">Notifications</a>
+				</li>
+				<li>
+					<a href="#builder__modals">Modals</a>
+				</li>
+				<li>
+					<a href="#builder__markers">Markers</a>
+				</li>
+				<li>
+					<a href="#builder__lists">Lists</a>
+				</li>
+				<li>
+					<a href="#builder__lightboxes">Lightboxes</a>
+				</li>
+				<li>
+					<a href="#builder__leader">Leader</a>
+				</li>
+				<li>
+					<a href="#builder__filter">Filter</a>
+				</li>
+				<li>
+					<a href="#builder__dropdown">Dropdown</a>
+				</li>
+				<li>
+					<a href="#builder__accordion">Accordion</a>
+				</li>
+				<li>
+					<a href="#builder__sidebar-nav">Sidebar nav</a>
+				</li>
+				<li>
+					<a href="#builder__labels">Labels</a>
+				</li>
+				<li>
+					<a href="#builder__totop">To top</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="builder__sliders" class="builder__container">
+
+		<!-- Sliders -->
+
+		<h1 class="uk-heading-primary uk-text-center uk uk-heading-line">
+			<span>Sliders</span>
+		</h1>
+
+		<ul class="builder__tabs-1 uk-tab" data-uk-tab="{connect:'#builder__tabs--sliders'}">
+			<li>
+				<a href="">Margin slider</a>
+			</li>
+			<li>
+				<a href="">Product slider</a>
+			</li>
+			<li>
+				<a href="">Full width slider</a>
+			</li>
+			<li>
+				<a href="">Card slider</a>
+			</li>
+			<li>
+				<a href="">Caption slider</a>
+			</li>
+		</ul>
+		<ul id="builder__tabs--sliders" class="uk-switcher uk-margin">
+			<li class="builder__item">
+
+				@@include('./_parts/_sliders/_full-width-margin-slider.html', {"class": "sample"})
+
+				<pre>@ @include('./_parts/_sliders/_full-width-margin-slider.html', {"class": "sample"})</pre>
+
+			</li>
+			<li class="builder__item">
+
+				@@include('./_parts/_sliders/_full-width-product-slider.html', {"class": "sample"})
+
+				<pre>@ @include('./_parts/_sliders/_full-width-product-slider.html', {"class": "sample"})</pre>
+
+			</li>
+			<li class="builder__item">
+
+				@@include('./_parts/_sliders/_full-width-slider.html', {"class": "sample"})
+
+				<pre>@ @include('./_parts/_sliders/_full-width-slider.html', {"class": "sample"})</pre>
+
+			</li>
+			<li class="builder__item">
+
+				@@include('./_parts/_sliders/_full-width-card-slider.html', {"class": "sample"})
+
+				<pre>@ @include('./_parts/_sliders/_full-width-card-slider.html', {"class": "sample"})</pre>
+
+			</li>
+			<li class="builder__item">
+
+				@@include('./_parts/_sliders/_full-width-caption-slider.html', {"class": "sample"})
+
+				<pre>@ @include('./_parts/_sliders/_full-width-caption-slider.html', {"class": "sample"})</pre>
+
+			</li>
+		</ul>
+
+	</div>
+	<!-- /builder__container -->
+
+	<div id="builder__slideshows" class="builder__container uk-margin-medium-top">
+
+		<!-- Slideshows -->
+
+		<h1 class="uk-heading-primary uk-text-center uk uk-heading-line">
+			<span>Slideshows</span>
+		</h1>
+
+		<div class="uk-container">
+			<ul class="yr__tabs uk-tab" data-uk-tab="{connect:'#builder__tabs-2'}">
+				<li>
+					<a href="">Zoom slideshow</a>
+				</li>
+				<li>
+					<a href="">Overlays slideshow</a>
+				</li>
+				<li>
+					<a href="">Parallax slideshow</a>
+				</li>
+				<li>
+					<a href="">Overlays sides slideshow</a>
+				</li>
+			</ul>
+			<ul id="builder__tabs-2" class="uk-switcher uk-margin">
+				<li class="builder__item">
+
+					@@include('./_parts/_slideshows/_slideshow--zoom.html', {"class": "sample"})
+
+					<pre>@ @include('./_parts/_slideshows/_slideshow--zoom.html', {"class": "sample"})</pre>
+
+				</li>
+				<li class="builder__item">
+
+					@@include('./_parts/_slideshows/_slideshow--overlays.html', {"class": "sample"})
+
+					<pre>@ @include('./_parts/_slideshows/_slideshow--overlays.html', {"class": "sample"})</pre>
+
+				</li>
+				<li class="builder__item">
+
+					@@include('./_parts/_slideshows/_slideshow--parallax.html', {"class": "sample"})
+
+					<pre>@ @include('./_parts/_slideshows/_slideshow--parallax.html', {"class": "sample"})</pre>
+
+				</li>
+				<li class="builder__item">
+
+					@@include('./_parts/_slideshows/_slideshow--overlays-sides.html', {"class": "sample"})
+
+					<pre>@ @include('./_parts/_slideshows/_slideshow--overlays-sides.html', {"class": "sample"})</pre>
+
+				</li>
+			</ul>
+		</div>
+
+	</div>
+	<!-- /builder__container -->
+
+</div>
+<!-- /uk-container -->
+
+<div id="builder__parallax" class="builder__container uk-margin-medium-top">
+
+	<!-- Parallax -->
+
+	<h1 class="uk-heading-primary uk-text-center uk uk-heading-line">
+		<span>Parallax</span>
+	</h1>
+
+	@@include('./_parts/_parallax/_parallax--background.html')
+
+	<div class="uk-margin uk-container">
+		<pre>@ @include('./_parts/_parallax/_parallax--background.html')</pre>
+	</div>
+
+</div>
+<!-- /builder__container -->
+
+<div class="uk-container">
+	<div id="builder__paginations" class="builder__container uk-margin-medium-top">
+
+		<!-- Paginations -->
+
+		<h1 class="builder__h1 uk-heading-primary uk-text-center uk uk-heading-line">
+			<span>Paginations</span>
+		</h1>
+
+		<div class="uk-container">
+			<ul class="yr__tabs uk-tab" data-uk-tab="{connect:'#builder__tabs-3'}">
+				<li>
+					<a href="">Next prev pagination</a>
+				</li>
+				<li>
+					<a href="">Number pagination</a>
+				</li>
+			</ul>
+			<ul id="builder__tabs-3" class="builder__tabs--h_a uk-switcher uk-margin">
+				<li class="builder__item">
+
+					@@include('./_parts/_pagination/_pagination--next-prev.html')
+
+					<pre>@ @include('./_parts/_pagination/_pagination--next-prev.html')</pre>
+
+				</li>
+				<li class="builder__item">
+
+					@@include('./_parts/_pagination/_pagination.html')
+
+					<pre>@ @include('./_parts/_pagination/_pagination.html')</pre>
+
+				</li>
+			</ul>
+		</div>
+
+	</div>
+	<!-- /builder__container -->
+
+	<div id="builder__tabs" class="builder__container uk-margin-medium-top">
+
+		<!-- Tabs -->
+
+		<h1 class="uk-heading-primary uk-text-center uk uk-heading-line">
+			<span>Tabs</span>
+		</h1>
+
+		<div class="uk-container">
+			@@include('./_parts/_tabs/_tabs.html', {"id": "sample", "class": "sample" })
+		</div>
+
+		<pre>@ @include('./_parts/_tabs/_tabs.html',{"id": "sample","class": "sample"})</pre>
+
+	</div>
+	<!-- /builder__container -->
+
+	<div id="builder__countdown" class="builder__container uk-margin-medium-top">
+
+		<!-- Countdown ( timer ) -->
+
+		<h1 class="uk-heading-primary uk-text-center uk uk-heading-line">
+			<span>Countdown</span>
+		</h1>
+
+		<div class="uk-container">
+			@@include('./_parts/_countdown/_countdown.html', {"class": "sample"})
+		</div>
+
+		<pre>@ @include('./_parts/_countdown/_countdown.html')</pre>
+
+	</div>
+	<!-- /builder__container -->
+
+	<div id="builder__overlays" class="builder__container uk-margin-medium-top">
+
+		<!-- Overlays -->
+
+		<h1 class="uk-heading-primary uk-text-center uk uk-heading-line">
+			<span>Overlays</span>
+		</h1>
+
+		<div class="uk-container">
+			<ul class="yr__tabs uk-tab" data-uk-tab="{connect:'#builder__tabs-4'}">
+				<li>
+					<a href="">Full overlay</a>
+				</li>
+				<li>
+					<a href="">Line overlay</a>
+				</li>
+			</ul>
+			<ul id="builder__tabs-4" class="uk-switcher uk-margin">
+				<li class="builder__item">
+
+					@@include('./_parts/_overlays/_overlay--full.html', {"class": "example"})
+
+					<pre>@ @include('./_parts/_overlays/_overlay--full.html', {"class": "example"})</pre>
+
+				</li>
+				<li class="builder__item">
+
+					@@include('./_parts/_overlays/_overlay.html', {"class": "example"})
+
+					<pre>@ @include('./_parts/_overlays/_overlay.html', {"class": "example"})</pre>
+
+				</li>
+			</ul>
+		</div>
+
+	</div>
+	<!-- /builder__container -->
+
+	<div id="builder__notifications" class="builder__container uk-margin-medium-top">
+
+		<!-- Notifications -->
+
+		<h1 class="uk-heading-primary uk-text-center uk uk-heading-line">
+			<span>Notifications</span>
+		</h1>
+
+		@@include('./_parts/_notifications/_notifications.html')
+
+		<pre>@ @include('./_parts/_notifications/_notifications.html')</pre>
+
+	</div>
+	<!-- /builder__container -->
+
+	<div id="builder__modals" class="builder__container uk-margin-medium-top">
+
+		<!-- Modals -->
+
+		<h1 class="uk-heading-primary uk-text-center uk uk-heading-line">
+			<span>Modals</span>
+		</h1>
+
+		@@include('./_parts/_modals/_modal.html') @@include('./_parts/_modals/_modal--full.html')
+
+		<h3 class="uk-h3">Modal</h3>
+		<pre>@ @include('./_parts/_modals/_modal.html')</pre>
+
+		<h3 class="uk-h3">Modal full</h3>
+		<pre>@ @include('./_parts/_modals/_modal--full.html')</pre>
+
+	</div>
+	<!-- /builder__container -->
+
+	<div id="builder__markers" class="builder__container uk-margin-medium-top">
+
+		<!-- Markers -->
+
+		<h1 class="uk-heading-primary uk-text-center uk uk-heading-line">
+			<span>Markers</span>
+		</h1>
+
+		@@include('./_parts/_markers/_markers.html')
+
+		<pre>@ @include('./_parts/_markers/_markers.html')</pre>
+
+	</div>
+	<!-- /builder__container -->
+
+	<div id="builder__lists" class="builder__container uk-margin-medium-top">
+
+		<!-- Lists -->
+
+		<h1 class="uk-heading-primary uk-text-center uk uk-heading-line">
+			<span>Lists</span>
+		</h1>
+
+		<div class="uk-container">
+			<ul class="yr__tabs uk-tab" data-uk-tab="{connect:'#builder__tabs-5'}">
+				<li>
+					<a href="">List bullet</a>
+				</li>
+				<li>
+					<a href="">List striped</a>
+				</li>
+				<li>
+					<a href="">List divider</a>
+				</li>
+			</ul>
+			<ul id="builder__tabs-5" class="builder__tabs--h_a uk-switcher uk-margin">
+				<li class="builder__item">
+
+					@@include('./_parts/_lists/_list--bullet.html', {"class": "sample"})
+
+					<pre>@ @include('./_parts/_lists/_list--bullet.html', {"class": "sample"})</pre>
+
+				</li>
+				<li class="builder__item">
+
+					@@include('./_parts/_lists/_list--striped.html', {"class": "sample"})
+
+					<pre>@ @include('./_parts/_lists/_list--striped.html', {"class": "sample"})</pre>
+
+				</li>
+				<li class="builder__item">
+
+					@@include('./_parts/_lists/_list--divider.html', {"class": "sample"})
+
+					<pre>@ @include('./_parts/_lists/_list--divider.html', {"class": "sample"})</pre>
+
+				</li>
+			</ul>
+		</div>
+
+	</div>
+	<!-- /builder__container -->
+
+	<div id="builder__lightboxes" class="builder__container uk-margin-medium-top">
+
+		<!-- Lightboxes -->
+
+		<h1 id="builder__lightboxes" class="builder__h1 uk-heading-primary uk-text-center uk uk-heading-line">
+			<span>Lightboxes</span>
+		</h1>
+
+		<h3 class="uk-h3">No caption lightbox</h3>
+		@@include('./_parts/_lightboxes/_lightbox--no-caption.html', {"class": "example"})
+
+		<pre>@ @include('./_parts/_lightboxes/_lightbox--no-caption.html', {"class": "example"}</pre>
+
+		<h3 class="uk-h3">Caption lightbox</h3>
+		@@include('./_parts/_lightboxes/_lightbox--caption.html', {"class": "example"})
+
+		<pre>@ @include('./_parts/_lightboxes/_lightbox--caption.html', {"class": "example"})</pre>
+
+		<h3 class="uk-h3">Fade</h3>
+		@@include('./_parts/_lightboxes/_lightbox--fade.html', {"class": "example"})
+
+		<pre>@ @include('./_parts/_lightboxes/_lightbox--fade.html', {"class": "example"})</pre>
+
+		<h3 class="uk-h3">Slide</h3>
+		@@include('./_parts/_lightboxes/_lightbox--slide.html', {"class": "example"})
+
+		<pre>@ @include('./_parts/_lightboxes/_lightbox--slide.html', {"class": "example"})</pre>
+
+		<h3 class="uk-h3">Scale</h3>
+		@@include('./_parts/_lightboxes/_lightbox--scale.html', {"class": "example"})
+
+		<pre>@ @include('./_parts/_lightboxes/_lightbox--scale.html', {"class": "example"})</pre>
+
+	</div>
+	<!-- /builder__container -->
+
+	<div id="builder__leader" class="builder__container uk-margin-medium-top">
+
+		<!-- Leader -->
+
+		<h1 class="uk-heading-primary uk-text-center uk uk-heading-line">
+			<span>Leader</span>
+		</h1>
+
+		@@include('./_parts/_leader/_leader.html')
+
+		<pre>@ @include('./_parts/_leader/_leader.html')</pre>
+
+	</div>
+	<!-- /builder__container -->
+
+	<div id="builder__filter" class="builder__container uk-margin-medium-top">
+
+		<!-- Filter -->
+
+		<h1 class="uk-heading-primary uk-text-center uk uk-heading-line">
+			<span>Filter</span>
+		</h1>
+
+		@@include('./_parts/_filter/_filter.html', {"class": "sample", "id": "sample"})
+
+		<pre>@ @include('./_parts/_filter/_filter.html', {"class": "sample", "id": "sample"})</pre>
+
+	</div>
+	<!-- /builder__container -->
+
+	<div id="builder__dropdown" class="builder__container uk-margin-medium-top">
+
+		<!-- Dropdown -->
+
+		<h1 class="uk-heading-primary uk-text-center uk uk-heading-line">
+			<span>Dropdown</span>
+		</h1>
+
+		@@include('./_parts/_dropdown/_dropdown.html')
+
+		<pre>@ @include('./_parts/_dropdown/_dropdown.html')</pre> @@include('./_parts/_dropdown/_dropdown--offset.html')
+
+		<pre>@ @include('./_parts/_dropdown/_dropdown--offset.html')</pre>
+
+	</div>
+	<!-- /builder__container -->
+
+	<div id="builder__accordion" class="uk-margin-bottom builder__container uk-margin-medium-top">
+
+		<!-- Accordion -->
+
+		<h1 class="uk-heading-primary uk-text-center uk uk-heading-line">
+			<span>Accordion</span>
+		</h1>
+
+		@@include('./_parts/_accordion/_accordion.html', {"class": "sample"})
+
+		<pre>@ @include('./_parts/_accordion/_accordion.html', {"class": "sample"})</pre>
+
+	</div>
+	<!-- /builder__container -->
+
+	<div id="builder__sidebar-nav" class="uk-margin-bottom builder__container uk-margin-medium-top">
+
+		<!-- Sidebar navigation -->
+
+		<h1 class="builder__h1 uk-heading-primary uk-text-center uk uk-heading-line">
+			<span>Sidebar navigation</span>
+		</h1>
+
+		<pre>@ @include('./_parts/_sidebar/_sidebar--fixed.html', {"class": "sample"})</pre>
+
+		@@include('./_parts/_sidebar/_sidebar--fixed.html', {"class": "sample"})
+
+	</div>
+	<!-- /builder__container -->
+
+	<div id="builder__labels" class="uk-margin-bottom builder__container uk-margin-medium-top">
+
+		<!-- Labels -->
+
+		<h1 class="builder__h1 uk-heading-primary uk-text-center uk uk-heading-line">
+			<span>Labels</span>
+		</h1>
+
+		<pre>@ @include('./_parts/_labels/_labels.html')</pre>
+
+		@@include('./_parts/_labels/_labels.html')
+
+	</div>
+	<!-- /builder__container -->
+
+	<!-- To top -->
+
+	<h1 class="uk-h1">To top</h1>
+	<div id="builder__totop" class="uk-margin-bottom">
+		<a href="#" class="yr__to-top" uk-totop uk-scroll></a>
+	</div>
+
+</div>
+<!-- /uk-container -->
+
+<!-- Footer -->
+
+@@include('./_parts/_footer.html')

@@ -1,0 +1,26 @@
+.yr__cart
+  position: relative
+
+  &:hover
+    .yr__cart-badge
+      background: lighten($important, 10%)
+      transition: 0.5s
+
+.yr__cart-badge
+  background: $important
+  margin-right: 5px
+  padding: 0 8px
+  transition: 0.5s
+
+.yr__cart--mobile
+  .yr__cart-badge
+    background: $important
+    position: absolute
+    right: 0
+    color: #fff
+    margin-right: 0
+
+  &:hover
+    .yr__cart-badge
+      color: #fff
+      background: lighten($important, 10%)

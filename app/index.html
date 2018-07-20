@@ -1,0 +1,58 @@
+@@include('./_parts/_head.html', { "pagetitle": "Сторінки", "bodyclass": "" })
+
+<!-- If include function -->
+
+<!-- @@include('./_parts/_test.html', {
+		"inner": false,
+		"login": true
+})
+
+@@if (login === false) {} -->
+
+<!-- Custom HTML -->
+
+<div class="container">
+
+	<!-- If big project -->
+
+	<style>
+		body {
+			background: #fff;
+		}
+
+		.big-project-ul {
+			float: left;
+		}
+
+		.big-project-ul li {
+			margin: 15px 0;
+		}
+
+		.big-project-ul__a {
+			color: #fff;
+			background: #e37b7c;
+			background-image: linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
+			transition: 1s;
+		}
+
+		.big-project-ul__a:hover {
+			color: #fff;
+			background: rgba(227, 123, 124, 0.77);
+			transition: 1s;
+		}
+
+	</style>
+
+	<ul class="uk-list big-project-ul showReveal-show showReveal">
+		<li>
+			<a href="builder.html" class="uk-button uk-button-large uk-button-default big-project-ul__a">Builder</a>
+		</li>
+
+		<li>
+			<a href="home.html" class="uk-button uk-button-large uk-button-default big-project-ul__a">Home</a>
+		</li>
+	</ul>
+
+</div>
+
+@@include('./_parts/_footer.html')

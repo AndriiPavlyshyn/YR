@@ -1,0 +1,112 @@
+.container
+	+wrapper()
+
+.row
+	+row-flex()
+
+@media screen and (max-width: 780px)
+
+	// Display none/block elements
+
+	.yr__lg-nav,
+	.yr__nav-overlay
+		display: none
+
+	.yr__burger
+		display: flex
+
+	// Media styles
+
+	.parallax
+		position: static
+
+@media screen and (max-width: 560px)
+
+	// Media styles
+
+	.yr__mobile-nav
+		width: 95%
+
+// Tabs
+
+@import "_components/_tabs/tabs--media"
+
+// Sliders
+
+@import "_components/_sliders/full-width-slider--media"
+@import "_components/_sliders/full-width-card-slider--media"
+@import "_components/_sliders/full-width-margin-slider--media"
+@import "_components/_sliders/full-width-caption-slider--media"
+@import "_components/_sliders/full-width-product-slider--media"
+
+// Slideshows
+
+@import "_components/_slideshows/slideshow--overlays-media"
+@import "_components/_slideshows/slideshow--overlays-sides-media"
+@import "_components/_slideshows/slideshow--parallax-media"
+@import "_components/_slideshows/slideshow--zoom-media"
+
+// Countdown
+
+@import "_components/_countdown/countdown--media"
+
+// Lightbox
+
+@import "_components/_lightboxes/lightbox--caption-media"
+@import "_components/_lightboxes/lightbox--fade-media"
+@import "_components/_lightboxes/lightbox--no-caption-media"
+@import "_components/_lightboxes/lightbox--scale-media"
+@import "_components/_lightboxes/lightbox--slide-media"
+
+// Lists
+
+@import "_components/_lists/list--bullet-media"
+@import "_components/_lists/list--divider-media"
+@import "_components/_lists/list--striped-media"
+
+// Markers
+
+@import "_components/_markers/markers--media"
+
+// Modals
+
+@import "_components/_modals/modal--full-media"
+@import "_components/_modals/modal--media"
+
+// Notifications
+
+@import "_components/_notifications/notifications--media"
+
+// Overlays
+
+@import "_components/_overlays/overlays--media"
+
+// Pagination
+
+@import "_components/_pagination/pagination--media"
+@import "_components/_pagination/pagination-next-prev-media"
+
+// Parallax
+
+@import "_components/_parallax/parallax--background-media"
+
+// Leader
+
+@import "_components/_leader/leader--media"
+
+// Filter
+
+@import "_components/_filter/filter--media"
+
+// Dropdown
+
+@import "_components/_dropdown/dropdown--offset-media"
+@import "_components/_dropdown/dropdown--media"
+
+// Accordion
+
+@import "_components/_accordion/accordion--media"
+
+// Sidebar
+
+@import "_components/_sidebar/sidebar--fixed-media"
