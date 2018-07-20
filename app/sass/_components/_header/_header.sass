@@ -6,7 +6,7 @@
 	width: 100%
 
 .yr__lg-nav .uk-navbar-dropdown
-	margin-top: 0
+	margin-top: 3px
 
 .yr__burger
 	cursor: pointer
@@ -22,27 +22,81 @@
 
 // Logo
 
+.logo__name
+	flex-direction: column
+	align-items: center
+
 .yr__logo-wrapper
 	align-items: center
 
 	h3
 		margin: 0
 
-.logo__text-h3
-	font-weight: bold
+.logo__name-wrapper
+	border-bottom: 2px solid $grey
+
+.logo__name-wrapper--no-border
+	border: none
 
 .logo__text-h3--after
 	position: relative
 	padding-right: 20px
 
 	&::after
+		align-items: center
 		color: $accent
 		content: "•"
-		display: block
-		height: 100%
-		position: absolute
-		width: 20px
-		top: 60%
-		right: 0
+		display: -ms-flex
+		display: -webkit-flex
+		display: flex
 		font-size: 20px
-		transform: translate(25%, -50%)
+		height: 100%
+		justify-content: center
+		position: absolute
+		right: 0
+		top: 50%
+		transform: translate(0, -50%)
+		width: 20px
+
+.yr__lg-nav
+	li
+		border: 1px solid $grey
+		border-bottom: 0
+		border-left: 0
+		border-top: 0
+		position: relative
+
+		&:hover::after
+			opacity: 1
+			transition: 0.3s
+
+		&:first-child
+			border-left: 1px solid $grey
+
+		a
+			color: $black
+			font-size: 16px
+			padding: 0 50px
+
+			&:hover
+				color: $black
+
+		&::after
+			background: $accent
+			bottom: -3px
+			content: ""
+			display: block
+			float: right
+			height: 3px
+			opacity: 0
+			position: absolute
+			transition: 0.3s
+			width: 100%
+
+	.uk-navbar-dropdown
+		padding: 0
+		width: 100%
+
+		.uk-nav
+			li
+				border: none
