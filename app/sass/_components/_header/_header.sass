@@ -5,9 +5,6 @@
 .yr__header
 	width: 100%
 
-.yr__lg-nav .uk-navbar-dropdown
-	margin-top: 3px
-
 .yr__burger
 	cursor: pointer
 	display: none
@@ -96,7 +93,11 @@
 	.uk-navbar-dropdown
 		padding: 0
 		width: 100%
+		min-width: 0
 
 		.uk-nav
 			li
 				border: none
+
+				&:hover::after
+					display: none
