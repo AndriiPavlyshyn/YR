@@ -57,4 +57,15 @@ jQuery(document).ready(function() {
 
 	UIkit.accordion(element, options);
 
+// var span = document.querySelector("span");
+// var classes = span.classList;
+// span.onclick = function() {
+// 	var result = classes.toggle("c");
+// 	if (result) {
+// 		span.textContent = "'c' added; classList is now '" + classes + "'.";
+// 	} else {
+// 		span.textContent = "'c' removed; classList is now '" + classes + "'.";
+// 	}
+// }
+
 });

@@ -1,1 +1,64 @@
+// Pulse float button
 
+$size: 60px
+
+.yr-float-button__wrapper
+  position: absolute
+  right: 50px
+  bottom: 50px
+
+.button
+  position: relative
+  width: $size
+  height: $size
+  background: $green-light
+  border-radius: 100%
+  animation: growing 1.2s ease infinite
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  align-items: center
+  justify-content: center
+
+  &::before
+    position: absolute
+    display: block
+    content: ''
+    top: 0
+    left: 0
+    width: $size
+    height: $size
+    border-radius: 100%
+    background: $green-dark
+    z-index: -1
+    animation: pulse 1.2s ease infinite
+
+  a
+    color: $accent
+    font-size: 18px
+
+/* Animation */
+
+@keyframes growing
+    0%
+      transform: scale(1, 1)
+
+    10%
+      transform: scale(0.925, 0.925)
+
+    30%
+      transform: scale(1.025, 1.025)
+
+    50%
+      transform: scale(1, 1)
+
+@keyframes pulse
+    0%
+      transform: scale(1, 1)
+
+    50%
+      opacity: 0.3
+
+    100%
+      transform: scale(1.5)
+      opacity: 0

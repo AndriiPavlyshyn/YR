@@ -98,6 +98,23 @@
 		.uk-nav
 			li
 				border: none
+				border-bottom: 1px solid $grey
+
+				&:hover
+					a
+						padding: 10px 30px 10px 10px
+						color: $accent
+						transition: 0.5s
 
 				&:hover::after
 					display: none
+
+				a
+					text-align: right
+					padding: 10px 20px
+					transition: 0.5s
+
+.yr-parent-chevron
+	margin: 5px 5px 0 0
+	font-size: 14px
+	color: $accent
