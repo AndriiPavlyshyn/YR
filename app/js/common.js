@@ -57,15 +57,14 @@ jQuery(document).ready(function() {
 
 	UIkit.accordion(element, options);
 
-// var span = document.querySelector("span");
-// var classes = span.classList;
-// span.onclick = function() {
-// 	var result = classes.toggle("c");
-// 	if (result) {
-// 		span.textContent = "'c' added; classList is now '" + classes + "'.";
-// 	} else {
-// 		span.textContent = "'c' removed; classList is now '" + classes + "'.";
-// 	}
-// }
-
 });
+
+// var floatButton = document.getElementById("js-yr-float-button__wrapper");
+// var floatButtonContainer = document.getElementById("yr-float-contact-form");
+//
+// var button = floatButton.classList;
+// var wrapper = floatButtonContainer.classList;
+// floatButton.onclick = function() {
+// 	// var result = button.toggle("yr-float-contact-form--open");
+// 	var result = wrapper.toggle("yr-float-contact-form--open");
+// }

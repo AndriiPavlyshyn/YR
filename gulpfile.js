@@ -44,7 +44,6 @@ gulp.task('scripts-min', function() {
 		return gulp.src([
 				'app/js/common.js' // Берем common.js (always in end)
 				])
-				.pipe(concat('common.min.js')) // Собираем их в кучу в новом файле libs.min.js
 				.pipe(uglify()) // Сжимаем JS файл
 				.pipe(gulp.dest('app/js')); // Выгружаем в папку app/js
 });
@@ -52,10 +51,9 @@ gulp.task('scripts-min', function() {
 gulp.task('js-concat', function() {
 	return gulp.src(['app/js/jquery.min.js', 'app/js/uikit.min.js',
 	'app/js/uikit-icons.min.js',
-	'app/js/uikit-icons.min.js',
-	'app/js/common.min.js'
+	'app/js/common.js'
 ])
-		.pipe(concat('scripts.min.js'))
+	.pipe(concat('scripts.min.js'))
 	.pipe(gulp.dest('builder/js'))
 });
 
@@ -96,7 +94,7 @@ gulp.task('fonts-redirect', function() {
 		.pipe(browserSync.reload({stream: true}))
 });
 
-gulp.task('watch', ['browser-sync', 'sass', 'fonts-redirect', 'css-redirect', 'fileinclude', 'scripts-min','js-concat', 'img-redirect'], function() {
+gulp.task('watch', ['browser-sync', 'sass', 'fonts-redirect', 'css-redirect', 'fileinclude', 'js-concat', 'img-redirect'], function() {
 		gulp.watch('app/sass/**/*.sass', ['sass']); // Наблюдение за sass файлами в папке sass
 		gulp.watch('app/css/**/*.css', ['sass']); // Наблюдение за sass файлами в папке sass
 		gulp.watch('app/**/*.html', ['fileinclude']); // Наблюдение за HTML файлами в корне проекта
@@ -108,7 +106,7 @@ gulp.task('clean', function() {
 		return del.sync('dist'); // Удаляем папку dist перед сборкой
 });
 
-gulp.task('build', ['clean', 'img', 'sass', 'js-concat'], function() {
+gulp.task('build', ['clean', 'img', 'sass', 'scripts-min', 'js-concat'], function() {
 
 		var buildCss = gulp.src([ // Переносим библиотеки в продакшен
 				'builder/css/main.css',

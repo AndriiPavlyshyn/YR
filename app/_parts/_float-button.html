@@ -1,10 +1,30 @@
-<div class="yr-float-button__wrapper">
-	<div class="button">
+<div id="js-yr-float-button__wrapper" class="yr-float-button__wrapper">
+	<div id="js-float-button" class="button">
 		<a href="#">
 			<i class="fa fa-chevron-down" aria-hidden="true"></i>
 		</a>
 	</div>
+	<div id="js-yr-float-contact-form" class="yr-float-contact-form yr-float-contact-form--close">
+
+	</div>
+
+	<div class="yr-float-contact-form-close" id="js-yr-float-contact-form-close"></div>
+
+	<script>
+		var floatButton = document.getElementById("js-yr-float-button__wrapper");
+		var floatButtonContainer = document.getElementById("js-yr-float-contact-form");
+		var buttonTrigger = document.getElementById("js-float-button")
+		var buttonTriggerClose = document.getElementById("js-yr-float-contact-form-close")
+
+		var button = buttonTrigger.classList;
+		var wrapper = floatButtonContainer.classList;
+		var closeButton = buttonTriggerClose.classList;
+
+		floatButton.onclick = function() {
+			button.toggle("no-pulse");
+			wrapper.toggle("yr-float-contact-form--open");
+			closeButton.toggle("yr-float-contact-form-close--visible");
+		}
+	</script>
 </div>
 <!-- /yr-float-button__wrapper -->
-
-<div class="uk-card"></div>
