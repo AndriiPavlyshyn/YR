@@ -3,10 +3,22 @@
 	<header class="yr__header @@class uk-preserve-color uk-box-shadow-medium">
 		<div class="yr__navbar-container uk-box-shadow-medium" uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-dark; top: 200">
 			<nav class="uk-navbar-container">
-				<div class="uk-grid-collapse uk-grid uk-text-center" uk-grid>
-					<div class="yr__header-contacts uk-width-1-5@m">
+				<div class="uk-grid-collapse uk-grid" uk-grid>
 
+					<div class="yr__logo-wrapper uk-width-expand@m uk-flex">
+						<a class="yr__logo uk-navbar-item uk-logo" href="#">Logo</a>
+						<div class="logo__name uk-flex">
+							<div class="logo__name-wrapper uk-flex">
+								<h3 class="logo__text-h3 logo__text-h3--after yr-bold">Yaniv Refael</h3>
+								<h3 class="logo__text-h3 yr-bold">Yaniv Refael</h3>
+							</div>
+							<div class="logo__name-wrapper logo__name-wrapper--no-border uk-flex">
+								<h3 class="logo__text-h3 logo__text-h3--after">Yaniv Refael</h3>
+								<h3 class="logo__text-h3">Yaniv Refael</h3>
+							</div>
+						</div>
 					</div>
+					<!-- /yr__logo-wrapper -->
 
 					<div class="yr__navbar" uk-navbar>
 
@@ -16,7 +28,7 @@
 								<a href="#">Active</a>
 							</li>
 							<li>
-								<a href="#"><i class="fa fa-chevron-down yr-parent-chevron" aria-hidden="true"></i>Parent</a>
+								<a href="#">Parent<i class="fa fa-chevron-down yr-parent-chevron" aria-hidden="true"></i></a>
 								<div class="uk-navbar-dropdown" uk-dropdown="offset: 3; delay-hide: 30">
 									<ul class="uk-nav uk-navbar-dropdown-nav">
 										<li class="uk-active">
@@ -49,20 +61,6 @@
 						<!-- /uk-navbar-nav -->
 						}
 
-						<div class="yr__logo-wrapper uk-flex">
-							<div class="logo__name uk-flex">
-								<div class="logo__name-wrapper uk-flex">
-									<h3 class="logo__text-h3 logo__text-h3--after yr-bold">Yaniv Refael</h3>
-									<h3 class="logo__text-h3 yr-bold">Yaniv Refael</h3>
-								</div>
-								<div class="logo__name-wrapper logo__name-wrapper--no-border uk-flex">
-									<h3 class="logo__text-h3 logo__text-h3--after">Yaniv Refael</h3>
-									<h3 class="logo__text-h3">Yaniv Refael</h3>
-								</div>
-							</div>
-							<a class="yr__logo uk-navbar-item uk-logo" href="#">Logo</a>
-						</div>
-
 						<div class="uk-navbar-right">
 							<div class="yr__burger uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-overlay"></div>
 						</div>
@@ -80,9 +78,30 @@
 						@@if (search === true) { @@include('./_header/_search.html') } @@if (cart === true) { @@include('./_header/_cart.html') }
 						</div>
 						<!-- /yr__navbar-container -->
+
+						<div class="yr__header-contacts uk-width-1-5@m uk-visible@s"></div>
+						<!-- /yr__header-contacts -->
 					</div>
 					<!-- /uk-grid-collapse -->
+				</div>
 			</nav>
-			</div>
+		</div>
 	</header>
 	<!-- /yr__header -->
+
+	<!-- Header sidebar -->
+	<div class="uk-grid-collapse uk-grid" uk-grid>
+		<div class="yr-header-info uk-width-expand@m"></div>
+		<div class="yr-sidebar uk-width-1-5@m">
+			<div class="yr-sidebar__title uk-flex">
+				<h4 class="yr-sidebar__h4">Title</h4>
+			</div>
+			<div class="yr-sidebar-section">
+				<button class="btn btn-4 btn-4b icon-arrow-left">Return</button>
+			</div>
+			<div class="yr-sidebar-section"></div>
+			<div class="yr-sidebar-section"></div>
+			<div class="yr-sidebar-section"></div>
+		</div>
+	</div>
+	<!-- /uk-grid-collapse -->

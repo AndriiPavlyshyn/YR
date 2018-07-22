@@ -25,6 +25,8 @@
 
 .yr__logo-wrapper
 	align-items: center
+	justify-content: flex-end
+	margin: 0 30px
 
 	h3
 		margin: 0
@@ -37,7 +39,7 @@
 
 .logo__text-h3--after
 	position: relative
-	padding-right: 20px
+	padding-left: 20px
 
 	&::after
 		align-items: center
@@ -50,7 +52,7 @@
 		height: 100%
 		justify-content: center
 		position: absolute
-		right: 0
+		left: 0
 		top: 50%
 		transform: translate(0, -50%)
 		width: 20px
@@ -118,3 +120,7 @@
 	margin: 5px 5px 0 0
 	font-size: 14px
 	color: $accent
+
+// Sidebar
+
+@import "_components/_header/sidebar"

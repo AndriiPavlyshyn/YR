@@ -66,7 +66,7 @@ gulp.task('css-libs', ['sass'], function() {
 });
 
 gulp.task('css-redirect', function() {
-	return gulp.src(['app/css/uikit.min.css'])
+	return gulp.src(['app/css/uikit-rtl.min.css'])
 		.pipe(gulp.dest('builder/css')) // Выгружаем в папку
 		.pipe(browserSync.reload({stream: true}))
 });

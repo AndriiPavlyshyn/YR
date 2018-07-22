@@ -5,7 +5,7 @@
 		</a>
 	</div>
 	<div id="js-yr-float-contact-form" class="yr-float-contact-form yr-float-contact-form--close">
-
+		<input type="text"><input type="text">
 	</div>
 
 	<div class="yr-float-contact-form-close" id="js-yr-float-contact-form-close"></div>
@@ -16,12 +16,14 @@
 		var buttonTrigger = document.getElementById("js-float-button")
 		var buttonTriggerClose = document.getElementById("js-yr-float-contact-form-close")
 
+		var buttonWrapper = floatButton.classList;
 		var button = buttonTrigger.classList;
 		var wrapper = floatButtonContainer.classList;
 		var closeButton = buttonTriggerClose.classList;
 
 		floatButton.onclick = function() {
 			button.toggle("no-pulse");
+			buttonWrapper.toggle("yr-float-button__wrapper--open");
 			wrapper.toggle("yr-float-contact-form--open");
 			closeButton.toggle("yr-float-contact-form-close--visible");
 		}
