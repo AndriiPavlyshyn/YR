@@ -57,6 +57,10 @@ jQuery(document).ready(function() {
 
 	UIkit.accordion(element, options);
 
+	$(".happy-meal").click(function(){
+		$(".burger").toggleClass('i-hate-burger');
+	})
+
 });
 
 // var floatButton = document.getElementById("js-yr-float-button__wrapper");
@@ -68,3 +72,5 @@ jQuery(document).ready(function() {
 // 	// var result = button.toggle("yr-float-contact-form--open");
 // 	var result = wrapper.toggle("yr-float-contact-form--open");
 // }
+
+// Burger

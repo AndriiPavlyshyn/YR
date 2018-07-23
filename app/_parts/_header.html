@@ -1,109 +1,93 @@
-<div class="yr__page-wrapper uk-offcanvas-content">
+<header class="yr__header @@class uk-preserve-color uk-box-shadow-medium">
+	<div class="yr__navbar-container uk-box-shadow-medium" uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-dark; top: 200">
+		<nav class="uk-navbar-container">
+			<div class="uk-grid-collapse uk-grid" uk-grid>
 
-	<header class="yr__header @@class uk-preserve-color uk-box-shadow-medium">
-		<div class="yr__navbar-container uk-box-shadow-medium" uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-dark; top: 200">
-			<nav class="uk-navbar-container">
-				<div class="uk-grid-collapse uk-grid" uk-grid>
+				@@include('./_header/_logo.html')
 
-					<div class="yr__logo-wrapper uk-width-expand@m uk-flex">
-						<a class="yr__logo uk-navbar-item uk-logo" href="#">Logo</a>
-						<div class="logo__name uk-flex">
-							<div class="logo__name-wrapper uk-flex">
-								<h3 class="logo__text-h3 logo__text-h3--after yr-bold">Yaniv Refael</h3>
-								<h3 class="logo__text-h3 yr-bold">Yaniv Refael</h3>
-							</div>
-							<div class="logo__name-wrapper logo__name-wrapper--no-border uk-flex">
-								<h3 class="logo__text-h3 logo__text-h3--after">Yaniv Refael</h3>
-								<h3 class="logo__text-h3">Yaniv Refael</h3>
-							</div>
-						</div>
-					</div>
-					<!-- /yr__logo-wrapper -->
+				<div class="yr__navbar" uk-navbar>
 
-					<div class="yr__navbar" uk-navbar>
-
-						@@if (nav === true) {
-						<ul class="yr__lg-nav uk-navbar-nav">
-							<li class="uk-active">
-								<a href="#">Active</a>
-							</li>
-							<li>
-								<a href="#">Parent<i class="fa fa-chevron-down yr-parent-chevron" aria-hidden="true"></i></a>
-								<div class="uk-navbar-dropdown" uk-dropdown="offset: 3; delay-hide: 30">
-									<ul class="uk-nav uk-navbar-dropdown-nav">
-										<li class="uk-active">
-											<a href="#">Active</a>
-										</li>
-										<li>
-											<a href="#">Item</a>
-										</li>
-										<li>
-											<a href="#">Item</a>
-										</li>
-									</ul </div>
-							</li>
-							<li>
-								<a href="#">Item</a>
-							</li>
-							<li>
-								<a href="#">Item</a>
-							</li>
-							<li>
-								<a href="#">Item</a>
-							</li>
-							<li>
-								<a href="#">Item</a>
-							</li>
-							<li>
-								<a href="#">Item</a>
-							</li>
-						</ul>
-						<!-- /uk-navbar-nav -->
-						}
-
-						<div class="uk-navbar-right">
-							<div class="yr__burger uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-overlay"></div>
-						</div>
-
-						<div class="yr__nav-overlay nav-overlay uk-navbar-right">
-
-							@@if (cart === true) {
-							<a class="yr__cart uk-navbar-toggle" uk-icon="cart" href="#yr__modal-cart" uk-toggle>
-								<span class="yr__cart-badge uk-badge">200</span>
+					@@if (nav === true) {
+					<ul class="yr__lg-nav uk-navbar-nav">
+						<li class="uk-active">
+							<a href="#">Active</a>
+						</li>
+						<li>
+							<a href="#">Parent
+								<i class="fa fa-chevron-down yr-parent-chevron" aria-hidden="true"></i>
 							</a>
-							} @@if (search === true) {
-							<a class="uk-navbar-toggle" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
-							}
-						</div>
-						@@if (search === true) { @@include('./_header/_search.html') } @@if (cart === true) { @@include('./_header/_cart.html') }
-						</div>
-						<!-- /yr__navbar-container -->
+							<div class="uk-navbar-dropdown" uk-dropdown="offset: 3; delay-hide: 30">
+								<ul class="uk-nav uk-navbar-dropdown-nav">
+									<li class="uk-active">
+										<a href="#">Active</a>
+									</li>
+									<li>
+										<a href="#">Item</a>
+									</li>
+									<li>
+										<a href="#">Item</a>
+									</li>
+								</ul </div>
+						</li>
+						<li>
+							<a href="#">Item</a>
+						</li>
+						<li>
+							<a href="#">Item</a>
+						</li>
+						<li>
+							<a href="#">Item</a>
+						</li>
+						<li>
+							<a href="#">Item</a>
+						</li>
+						<li>
+							<a href="#">Item</a>
+						</li>
+					</ul>
+					<!-- /uk-navbar-nav -->
+					}
 
-						<div class="yr__header-contacts uk-width-1-5@m uk-visible@s"></div>
-						<!-- /yr__header-contacts -->
+					<div class="uk-navbar-right uk-hidden@m">
+						<a uk-toggle="target: #offcanvas-reveal" class="happy-meal yr__burger uk-navbar-toggle">
+							<span class="burger"></span>
+						</a>
 					</div>
-					<!-- /uk-grid-collapse -->
+
+					<div class="yr__nav-overlay nav-overlay uk-navbar-right">
+
+						@@if (cart === true) {
+						<a class="yr__cart uk-navbar-toggle" uk-icon="cart" href="#yr__modal-cart" uk-toggle>
+							<span class="yr__cart-badge uk-badge">200</span>
+						</a>
+						} @@if (search === true) {
+						<a class="uk-navbar-toggle" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+						}
+					</div>
+					<!-- /yr__nav-overlay -->
+
+					@@if (search === true) { @@include('./_header/_search.html') } @@if (cart === true) { @@include('./_header/_cart.html') }
+
+					</div>
+					<!-- /yr__navbar -->
+
+					<div class="yr__header-contacts uk-width-1-5@m uk-visible@s"></div>
+					<!-- /yr__header-contacts -->
 				</div>
-			</nav>
+				<!-- /uk-grid-collapse -->
+		</nav>
+		<!-- /uk-navbar-container -->
 		</div>
-	</header>
-	<!-- /yr__header -->
+		<!-- /yr__navbar-container -->
+</header>
+<!-- /yr__header -->
+
+<!-- Header section -->
+<div class="uk-grid-collapse uk-grid" uk-grid>
+	<!-- Header info section -->
+	@@include('./_header/_header-info.html')
 
 	<!-- Header sidebar -->
-	<div class="uk-grid-collapse uk-grid" uk-grid>
-		<div class="yr-header-info uk-width-expand@m" data-src="img/doroga.jpg" uk-img>
-			<div class="yr-info-section yr-gradient-mask">
-				<h1>TITLE</h1>
-			</div>
-		</div>
-		<div class="yr-sidebar uk-width-1-5@m">
-			<div class="yr-sidebar__title uk-flex">
-				<h4 class="yr-sidebar__h4">Title</h4>
-			</div>
-			<div class="yr-sidebar-section yr-sidebar-section--light-green"></div>
-			<div class="yr-sidebar-section"></div>
-			<div class="yr-sidebar-section yr-sidebar-section--dark-green"></div>
-			<div class="yr-sidebar-section yr-sidebar-section--dark-blue"></div>
-		</div>
-	</div>
-	<!-- /uk-grid-collapse -->
+	@@include('./_header/_header-sidebar.html')
+</div>
+<!-- /uk-grid-collapse -->

@@ -49,6 +49,10 @@ a:focus,
 a:active
 	outline: none
 
+.yr-container
+	width: 100%
+	max-width: 100%
+
 // Fix of full modal paddings
 
 .uk-modal-full
@@ -104,6 +108,11 @@ a:active
 	&::before
 		display: none
 
+.yr-shadow-inset
+	-webkit-box-shadow: inset 3px 0px 5px 0px rgba(0,0,0,0.75)
+	-moz-box-shadow: inset 3px 0px 5px 0px rgba(0,0,0,0.75)
+	box-shadow: inset 3px 0px 5px 0px rgba(0,0,0,0.75)
+
 /* Header */
 
 @import "_components/_header/header"
@@ -113,6 +122,10 @@ a:active
 
 //Tabs
 @import "_components/_tabs/tabs"
+
+//Forms
+
+@import "_components/_forms/header-form"
 
 // Sliders
 @import "_components/_sliders/full-width-slider"

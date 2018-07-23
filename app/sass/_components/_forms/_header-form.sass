@@ -1,0 +1,64 @@
+//Header form
+
+.yr-header__form-wrapper
+  position: absolute
+  bottom: 0
+  width: 100%
+
+.yr-header__form
+  padding: 0 20px
+
+.yr-header-form
+  background: rgba($white-milk, 0.9)
+  padding: 35px 0
+
+.yr-input__wrapper
+  max-width: 160px
+  margin-left: 10px
+
+  .uk-form-icon
+    img
+      height: 50%
+
+.yr-input
+  border-radius: 50px
+  padding: 20px 0 20px 10px
+  border-color: $white
+
+  &:focus
+    border-color: $accent
+
+  &::placeholder
+    color: $black
+
+.uk-grid-divider > :not(.uk-first-column)::before
+  border: none
+  height: 50%
+  width: 1px
+  top: 50%
+  transform: translate(-50%, -50%)
+  background: $accent
+
+.yr-header-h4-label
+  margin-bottom: 10px
+
+.yr-button
+  border-radius: 50px
+  height: 42px
+  background: $accent
+  color: $white
+  transition: 0.5s
+
+  i
+    margin-right: 10px
+    position: relative
+    transition: 0.5s
+
+  &:hover
+    color: $accent
+    background: $white
+    transition: 0.5s
+
+    i
+      transform: translate(-90%, 0)
+      transition: 0.5s

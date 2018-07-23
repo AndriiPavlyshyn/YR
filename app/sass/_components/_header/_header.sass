@@ -17,46 +17,6 @@
 			a
 				font-size: 15px
 
-// Logo
-
-.logo__name
-	flex-direction: column
-	align-items: center
-
-.yr__logo-wrapper
-	align-items: center
-	justify-content: flex-end
-	margin: 0 30px
-
-	h3
-		margin: 0
-
-.logo__name-wrapper
-	border-bottom: 2px solid $grey
-
-.logo__name-wrapper--no-border
-	border: none
-
-.logo__text-h3--after
-	position: relative
-	padding-left: 20px
-
-	&::after
-		align-items: center
-		color: $accent
-		content: "•"
-		display: -ms-flex
-		display: -webkit-flex
-		display: flex
-		font-size: 20px
-		height: 100%
-		justify-content: center
-		position: absolute
-		left: 0
-		top: 50%
-		transform: translate(0, -50%)
-		width: 20px
-
 .yr__lg-nav
 	li
 		border: 1px solid $grey
@@ -68,8 +28,9 @@
 		&:hover::after
 			opacity: 1
 			transition: 0.3s
+			z-index: 15
 
-		&:first-child
+		&:last-child
 			border-left: 1px solid $grey
 
 		a
@@ -124,3 +85,73 @@
 // Sidebar
 
 @import "_components/_header/sidebar"
+
+// Burger
+
+.burger
+	background: $accent
+	display: block
+	height: 2px
+	position: relative
+	transition: transform .2s ease
+	width: 30px
+
+	&:before,
+	&:after
+		animation: burger-init .4s forwards
+		background: inherit
+		content: ""
+		display: block
+		height: inherit
+		position: absolute
+		width: inherit
+
+		// reset ani
+		transform: rotate(0deg)
+
+	&:before
+		top: -8px
+
+	&:after
+		top: 8px
+
+.i-hate-burger
+	transition-delay: .2s
+	transform: rotate(45deg)
+
+	&:before,
+	&:after
+		animation: burger .4s forwards
+
+
+@keyframes burger
+
+	35%
+		top: 0
+
+	50%
+		transform: rotate(0deg)
+
+	100%
+		top: 0
+		transform: rotate(-90deg)
+
+@keyframes burger-init
+
+	0%
+		transform: rotate(-90deg)
+		top: 0
+
+	35%
+		transform: rotate(0deg)
+
+	50%
+		top: 0
+		transform: rotate(0deg)
+
+.happy-meal
+	cursor: pointer
+	height: 20px
+	display: none
+	text-align: center
+	position: relative
