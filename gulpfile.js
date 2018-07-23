@@ -111,7 +111,7 @@ gulp.task('build', ['clean', 'img', 'sass', 'scripts-min', 'js-concat'], functio
 
 		var buildCss = gulp.src([ // Переносим библиотеки в продакшен
 				'builder/css/main.css',
-				'builder/css/uikit.min.css'
+				'builder/css/uikit-rtl.min.css'
 				])
 		.pipe(gulp.dest('dist/css'))
 
