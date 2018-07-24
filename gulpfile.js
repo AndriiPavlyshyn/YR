@@ -45,13 +45,14 @@ gulp.task('scripts-min', function() {
 				'app/js/common.js' // Берем common.js (always in end)
 				])
 				.pipe(uglify()) // Сжимаем JS файл
-				.pipe(gulp.dest('app/js')); // Выгружаем в папку app/js
+				.pipe(gulp.dest('app/js/product')); // Выгружаем в папку app/js
 });
 
 gulp.task('js-concat', function() {
 	return gulp.src(['app/js/jquery.min.js', 'app/js/uikit.min.js',
 	'app/js/uikit-icons.min.js',
 	'app/js/common.js'
+	// ,'app/js/product/common.js'
 ])
 	.pipe(concat('scripts.min.js'))
 	.pipe(gulp.dest('builder/js'))

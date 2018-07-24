@@ -51,7 +51,7 @@
 
 		a
 			color: $black
-			font-size: 16px
+			font-size: 20px
 			padding: 0 50px
 			min-height: 105px
 
@@ -79,11 +79,10 @@
 			li
 				border: none
 				border-bottom: 1px solid $grey
-				max-height: 45px
 
 				&:hover
 					a
-						padding: 10px 30px 10px 10px
+						padding: 0 30px 0 10px
 						color: $accent
 						transition: 0.5s
 
@@ -92,8 +91,14 @@
 
 				a
 					text-align: right
-					padding: 10px 20px
+					padding: 0 20px
 					transition: 0.5s
+					min-height: 45px
+					height: 100%
+					display: -webkit-flex
+					display: -ms-flex
+					display: flex
+					align-items: center
 
 .yr-parent-chevron
 	margin: 5px 5px 0 0
@@ -173,3 +178,13 @@
 	display: none
 	text-align: center
 	position: relative
+
+// Header contacts
+
+.contacts__h2,
+.contacts__p
+	margin: 0
+
+.contacts__h2
+	font-size: $h2
+	font-weight: bold
