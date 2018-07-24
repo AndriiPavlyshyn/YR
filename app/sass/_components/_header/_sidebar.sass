@@ -16,6 +16,10 @@
   background: $accent
   min-height: 135px
   width: 100%
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  align-items: center
 
   &::before
     position: absolute
@@ -44,7 +48,21 @@
     z-index: 10
 
   &:hover::before
-    left: 10%
+    left: 5%
+
+  &:hover
+    .yr-sidebar__icon--flats
+      background-image: url(/img/icons/FlatsDark.png)
+      transition: 0.5s
+
+    .yr-sidebar__icon--magnifier
+      background-image: url(/img/icons/MagnifierDark.png)
+
+    .yr-sidebar__icon--house
+      background-image: url(/img/icons/HouseDark.png)
+
+    .yr-sidebar__icon--notebook
+      background-image: url(/img/icons/NotebookDark.png)
 
 .yr-sidebar-section--light-green
   background: $green-light
@@ -78,3 +96,40 @@
     font-size: $h3
     margin: 0
     padding: 10px 20px
+    font-weight: bold
+
+.sidebar__title-h3,
+.sidebar__title-h4
+  color: $white
+
+.sidebar__title-h3
+  font-size: $h3-32
+  margin: 0
+  font-weight: lighter
+
+.sidebar__title-h4
+  margin: 0
+  font-size: 16px
+
+.yr-sidebar__title-container
+  padding: 25px
+  padding-right: 0
+
+.yr-sidebar__icon
+  margin: 0 20px
+  height: 65px
+  min-width: 65px
+  transition: 0.5s
+  background-repeat: no-repeat
+
+.yr-sidebar__icon--flats
+  background-image: url(/img/icons/FlatsLight.png)
+
+.yr-sidebar__icon--magnifier
+  background-image: url(/img/icons/MagnifierLight.png)
+
+.yr-sidebar__icon--house
+  background-image: url(/img/icons/HouseLight.png)
+
+.yr-sidebar__icon--notebook
+  background-image: url(/img/icons/NotebookLight.png)
