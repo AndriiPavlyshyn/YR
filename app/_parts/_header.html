@@ -3,12 +3,18 @@
 		<nav class="uk-navbar-container">
 			<div class="uk-grid-collapse uk-grid" uk-grid>
 
+				<div class="yr-burger__wrapper uk-navbar-right uk-hidden@l">
+					<a uk-toggle="target: #offcanvas-reveal" class="happy-meal yr__burger uk-navbar-toggle">
+						<span class="burger"></span>
+					</a>
+				</div>
+
 				@@include('./_header/_logo.html')
 
 				<div class="yr__navbar" uk-navbar>
 
 					@@if (nav === true) {
-					<ul class="yr__lg-nav uk-navbar-nav">
+					<ul class="yr__lg-nav uk-navbar-nav uk-visible@l">
 						<li>
 							<a href="#">דף_הבית</a>
 						</li>
@@ -42,12 +48,6 @@
 					<!-- /uk-navbar-nav -->
 					}
 
-					<div class="uk-navbar-right uk-hidden@m">
-						<a uk-toggle="target: #offcanvas-reveal" class="happy-meal yr__burger uk-navbar-toggle">
-							<span class="burger"></span>
-						</a>
-					</div>
-
 					<div class="yr__nav-overlay nav-overlay uk-navbar-right">
 
 						@@if (cart === true) {
@@ -65,7 +65,7 @@
 				</div>
 				<!-- /yr__navbar -->
 
-				<div class="yr__header-contacts uk-width-1-5@m uk-visible@s">
+				<div class="yr__header-contacts uk-width-1-5@m uk-visible@xl">
 					<div class="header-contacts__container">
 						<img src="img/logos/phoneHeaderPng.png" alt="" class="contacts__logo">
 						<div class="contacts__number">

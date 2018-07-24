@@ -15,10 +15,11 @@
 
 .yr__header
 	width: 100%
+	position: relative
+	z-index: 10
 
 .yr__burger
 	cursor: pointer
-	display: none
 
 .yr__mobile-nav
 	width: 60%
@@ -26,7 +27,7 @@
 	ul
 		li
 			a
-				font-size: 15px
+				font-size: $p
 
 .yr__lg-nav
 	li
@@ -51,9 +52,9 @@
 
 		a
 			color: $black
-			font-size: 20px
-			padding: 0 50px
-			min-height: 105px
+			font-size: 1.3em
+			padding: 0 2.4vw
+			min-height: 5.5vw
 
 			&:hover
 				color: $black
@@ -108,6 +109,10 @@
 // Sidebar
 
 @import "_components/_header/sidebar"
+
+// Info section
+
+@import "_components/_header/info-section"
 
 // Burger
 
@@ -175,7 +180,6 @@
 .happy-meal
 	cursor: pointer
 	height: 20px
-	display: none
 	text-align: center
 	position: relative
 

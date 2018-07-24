@@ -4,30 +4,47 @@
 .row
 	+row-flex()
 
+@media screen and (max-width: 1600px)
+
+	.header-contacts__container--mobile
+		border-bottom: 1px solid $accent
+
+	.yr__logo-wrapper
+		display: -webkit-flex
+		display: -ms-flex
+		display: flex
+		justify-content: center
+
+	h2,
+	.contacts__h2
+		font-size: 2rem
+
+@media screen and (max-width: 1200px)
+
+	.yr__logo-wrapper
+		justify-content: flex-end
+
 @media screen and (max-width: 780px)
 
 	// Display none/block elements
-
-	.yr__lg-nav,
-	.yr__nav-overlay
-		display: none
 
 	.yr__burger
 		display: flex
 
 	// Media styles
 
+	.yr-logo
+		width: 70%
+
 	.parallax
 		position: static
 
-	.yr__navbar
+	.yr-burger__wrapper
 		min-height: 60px
 		background: $green-lighter
 		border-left: 1px solid darken($green-lighter, 10%)
 
 @media screen and (max-width: 560px)
-
-	// Media styles
 
 	.yr__mobile-nav
 		width: 95%
