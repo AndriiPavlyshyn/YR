@@ -68,10 +68,10 @@ $(".happy-meal").click(function() {
 // Form float button
 
 $('#js-yr-float-button__wrapper').click(function() {
-	$('.call_form').addClass('in').animate({width: "toggle"});
-	$('.call_section>a, .btn_phone_fill').css('visibility', 'hidden');
+	$('.call_form').addClass('in').animate({width: "toggle", opacity: "1"});
+	$('#js-yr-float-button__wrapper').css('visibility', 'hidden');
 });
-$('.call_form .close').click(function() {
-	$('.call_form').removeClass('in').animate({width: "toggle"});
-	$('.call_section>a, .btn_phone_fill').css('visibility', 'visible');
+$('.call_form .yr-float-close').click(function() {
+	$('.call_form').removeClass('in').animate({width: "toggle", opacity: "0"});
+	$('#js-yr-float-button__wrapper').css('visibility', 'visible');
 });

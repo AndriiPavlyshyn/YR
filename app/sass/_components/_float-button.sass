@@ -1,0 +1,150 @@
+// Pulse float button
+
+$size: 60px
+
+.yr-button-wrapper
+  position: fixed
+  right: 50px
+  bottom: 50px
+
+.yr-float-button__wrapper
+  transition: 0.5s
+
+.button
+  position: relative
+  width: $size
+  height: $size
+  background: $green-light
+  border-radius: 100%
+  animation: growing 1.2s ease infinite
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  align-items: center
+  justify-content: center
+
+  &::before
+    position: absolute
+    display: block
+    content: ''
+    top: 0
+    left: 0
+    width: $size
+    height: $size
+    border-radius: 100%
+    background: $green-dark
+    z-index: -1
+    animation: pulse 1.2s ease infinite
+
+  a
+    color: $accent
+    font-size: $p
+
+/* Animation */
+
+@keyframes growing
+    0%
+      transform: scale(1, 1)
+
+    10%
+      transform: scale(0.925, 0.925)
+
+    30%
+      transform: scale(1.025, 1.025)
+
+    50%
+      transform: scale(1, 1)
+
+@keyframes pulse
+    0%
+      transform: scale(1, 1)
+
+    50%
+      opacity: 0.3
+
+    100%
+      transform: scale(1.5)
+      opacity: 0
+
+// Float button open
+
+.yr-button__form
+  input,
+  button
+    height: 50px
+
+  input
+    width: 180px
+
+  button
+    width: 105px
+
+.call_section
+  z-index: 4
+  position: absolute
+  top: -15px
+  right: 100px
+
+.call_form
+  position: absolute
+  z-index: 7
+  background: $limon
+  border-radius: 100px
+  width: 700px
+  display: none
+  min-height: 90px
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  padding: 0 20px
+  border: 2px solid $accent
+
+.call_form.in
+  /*display: block*/
+
+.call_form .yr-float-close
+  width: 40px
+  height: 40px
+  background: #000
+  border-radius: 50px
+  position: absolute
+  right: -90px
+  top: 50%
+  transform: translate(0, -50%)
+  z-index: 8
+  cursor: pointer
+
+  div
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    height: 100%
+
+.yr-float-form-wrapper
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  min-width: 700px
+
+  .yr-header-h4-label
+    margin: 0
+    text-align: right
+
+  p
+    margin: 0
+    text-align: right
+    line-height: 1.13
+
+.yr-float-content
+  width: 170px
+
+.yr-float-info
+  margin-left: 20px
