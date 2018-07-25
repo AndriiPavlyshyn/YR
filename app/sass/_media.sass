@@ -127,12 +127,40 @@
 			display: flex
 			justify-content: flex-end
 
+	.yr-sidebar-section
+		justify-content: center
 
 	.yr-sidebar__title
 		justify-content: center
 
 		.yr-sidebar__h3
 			text-align: center
+
+	.yr-sidebar
+		display: -webkit-flex
+		display: -ms-flex
+		display: flex
+		flex-wrap: wrap
+
+		.sidebar__title-h4
+			display: none
+
+	.yr-sidebar__title
+		width: 100%
+
+	.yr-section-container
+		flex-direction: column
+		justify-content: center
+		align-items: center
+
+	.yr-sidebar-section
+		width: 50%
+
+		&::before
+			display: none
+
+		.sidebar__title-h3
+			font-size: 1.5rem
 
 @media screen and (max-width: 780px)
 
@@ -149,8 +177,12 @@
 	.awards__container
 		margin-bottom: 20px
 
-	.yr-awards .awards__img
-		height: 50px
+	.yr-awards
+		.awards__img
+			height: 50px
+
+			&:first-child
+			  height: 60px
 
 	.brending__h1
 		color: $white
