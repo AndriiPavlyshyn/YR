@@ -57,21 +57,21 @@ jQuery(document).ready(function() {
 
 	UIkit.accordion(element, options);
 
-	$("js-yr-float-button__wrapper").click(function() { // class of the button div
-		$("").addClass(), // class/id/classes which will hide
-		// $(".main-carousel .owl-nav .owl-next").show();
-		 // class/id/classes which will show
-		return false;
-	});
-	/* second button ( not necessarily ) */
-	$(".main-carousel .owl-nav .owl-next").click(function() { // class of the button div
-		$(".time-wrapper,.burger,.logo,.owl-prev").show(), // class/id/classes which will hide
-		$(".main-carousel .owl-nav .owl-next").hide(); // class/id/classes which will show
-		return false;
-	});
-
 });
+
+// Burger
 
 $(".happy-meal").click(function() {
 	$(".burger").toggleClass('i-hate-burger');
 })
+
+// Form float button
+
+$('#js-yr-float-button__wrapper').click(function() {
+	$('.call_form').addClass('in').animate({width: "toggle"});
+	$('.call_section>a, .btn_phone_fill').css('visibility', 'hidden');
+});
+$('.call_form .close').click(function() {
+	$('.call_form').removeClass('in').animate({width: "toggle"});
+	$('.call_section>a, .btn_phone_fill').css('visibility', 'visible');
+});

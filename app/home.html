@@ -57,5 +57,160 @@
 	</div>
 </div>
 
+<style>
+.call_section {
+   z-index: 4;
+   position: fixed;
+   top: 61.4215%;
+   right: 2%;
+   z-index: 12;
+}
+.call_form {
+    position: absolute;
+    right: 45%;
+    top: -10px;
+    z-index: 7;
+    background: rgba(0,0,0,.8);
+    border-radius: 70px;
+    padding-top: 16.87%;
+    padding-bottom: 16.87%;
+    background-image: url(/wp-content/themes/kartina-template/images/contact_form.png);
+    background-position: 3.2% center;
+    background-repeat:  no-repeat;
+    display: none;
+}
+.call_form.in {
+    /*display: block;*/
+}
+.call_form form {
+    padding-left: 113px;
+    padding-right: 25px;
+}
+
+.call_form p {
+    width: 260px;
+    margin-bottom: 0;
+}
+.call_form .title {
+    font-weight: 600;
+    font-size: 22px;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 4.61%;
+}
+.call_form .sub-title {
+    font-size: 12px;
+    line-height: 18px;
+    color: #929191;
+}
+.call_form form {
+   display: -moz-inline-flex;
+   display: -ms-inline-flex;
+   display: -o-inline-flex;
+   display: -webkit-inline-box;
+   display: -ms-inline-flexbox;
+   display: inline-flex;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+}
+.call_form input {
+    margin: 0 auto;
+    width: 92%;
+    display: block;
+    height: 48px;
+    border-radius: 70px;
+}
+.call_form input:focus {
+    outline: none;
+}
+.call_form  div.wpcf7 .ajax-loader {
+    position: absolute;
+}
+.call_form .close {
+    width: 47px;
+    height: 47px;
+    padding: 7px;
+    background-image: -webkit-linear-gradient(top, rgba(214,96,3,.4) 0%, rgba(254,142,54,.4) 100%);
+    background-image: -o-linear-gradient(top, rgba(214,96,3,.4) 0%, rgba(254,142,54,.4) 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(214,96,3,.4)), to(rgba(254,142,54,.4)));
+    background-image: linear-gradient(to bottom, rgba(214,96,3,.4) 0%, rgba(254,142,54,.4) 100%);
+
+    border-radius: 50px;
+    position: absolute;
+    top: -50px;
+    right: 0;
+    z-index: 8;
+    cursor: pointer;
+}
+.call_form .close >div {
+    background-image: -webkit-linear-gradient(bottom, rgb(214,96,3) 0%, rgb(254,142,54) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(214,96,3) 0%, rgb(254,142,54) 100%);
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(214,96,3)), to(rgb(254,142,54)));
+    background-image: linear-gradient(to top, rgb(214,96,3) 0%, rgb(254,142,54) 100%);
+
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.call_form .close >div span {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: url(/wp-content/themes/kartina-template/images/close-ico.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
+    display: none !important;
+}
+.wpcf7-not-valid {
+    border-color: red !important;
+        outline-color: red;
+}
+
+</style>
+
+<div class="call_section">
+	<a style="visibility: visible;">
+		<span class="ico"></span>
+	</a>
+	<div class="call_form" style="display: none;">
+		<div class="close">
+			<div>
+				<span></span>
+			</div>
+		</div>
+		<div role="form" class="wpcf7" id="wpcf7-f160-o1" dir="ltr" lang="en-US">
+			<div class="screen-reader-response"></div>
+			<form action="/#wpcf7-f160-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+				<div style="display: none;">
+					<input name="_wpcf7" value="160" type="hidden">
+					<input name="_wpcf7_version" value="5.0.2" type="hidden">
+					<input name="_wpcf7_locale" value="en_US" type="hidden">
+					<input name="_wpcf7_unit_tag" value="wpcf7-f160-o1" type="hidden">
+					<input name="_wpcf7_container_post" value="0" type="hidden">
+				</div>
+				<div>
+					<p class="title">Есть вопросы?</p>
+					<p class="sub-title">Оставьте свой номер телефона и наш представитель свяжется с Вами</p>
+				</div>
+				<p>
+					<span class="wpcf7-form-control-wrap your-tel">
+						<input name="your-tel" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="Номер телефона" type="tel">
+					</span>
+				</p>
+				<p>
+					<input value="Перезвоните мне!" class="wpcf7-form-control wpcf7-submit" type="submit">
+					<span class="ajax-loader"></span>
+				</p>
+				<div class="wpcf7-response-output wpcf7-display-none"></div>
+			</form>
+		</div>
+	</div>
+</div>
+
 <div class="margin"></div>
 @@include('./_parts/_footer.html')
