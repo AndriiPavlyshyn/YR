@@ -69,9 +69,9 @@ $(".happy-meal").click(function() {
 
 $('#js-yr-float-button__wrapper').click(function() {
 	$('.call_form').addClass('in').animate({width: "toggle", opacity: "1"});
-	$('#js-yr-float-button__wrapper').css('visibility', 'hidden');
+	$('#js-yr-float-button__wrapper').css('opacity', '0');
 });
 $('.call_form .yr-float-close').click(function() {
 	$('.call_form').removeClass('in').animate({width: "toggle", opacity: "0"});
-	$('#js-yr-float-button__wrapper').css('visibility', 'visible');
+	$('#js-yr-float-button__wrapper').css('opacity', '1');
 });

@@ -1,73 +1,45 @@
-<!-- <div id="offcanvas-reveal" class="yr__offcanvas-nav" uk-offcanvas="mode: push; overlay: true">
-	<div class="yr__mobile-nav uk-offcanvas-bar">
-
-		<button class="uk-offcanvas-close" type="button" uk-close></button>
-
-		<ul class="uk-nav-default uk-nav-parent-icon" uk-nav="multiple: true">
-        <li class="uk-active"><a href="#">Active</a></li>
-        <li class="uk-parent">
-            <a href="#">Parent</a>
-            <ul class="uk-nav-sub">
-                <li><a href="#">Sub item</a></li>
-                <li>
-                    <a href="#">Sub item</a>
-                    <ul>
-                        <li><a href="#">Sub item</a></li>
-                        <li><a href="#">Sub item</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
-        <li class="uk-parent">
-            <a href="#">Parent</a>
-            <ul class="uk-nav-sub">
-                <li><a href="#">Sub item</a></li>
-                <li><a href="#">Sub item</a></li>
-            </ul>
-        </li>
-    </ul>
-
-		<ul class="uk-nav uk-nav-default">
-			<li>
-				<a href="#">Active</a>
-			</li>
-			<li class="uk-parent">
-				<a href="#">Parent</a>
-				<ul class="uk-nav-sub">
-					<li>
-						<a href="#">Sub item</a>
-					</li>
-					<li>
-						<a href="#">Sub item</a>
-					</li>
-				</ul>
-			</li>
-			<li class="uk-nav-header">Header</li>
-			<li>
-				<a href="#">
-					<span class="uk-margin-small-right" uk-icon="icon: table"></span>Item</a>
-			</li>
-			<li>
-				<a href="#">
-					<span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span>Item</a>
-			</li>
-			<li class="uk-nav-divider"></li>
-			<li>
-				<a class="yr__cart yr__cart--mobile" href="#modal-center">
-					<span class="uk-margin-small-right" uk-icon="icon: cart"></span>Cart<span class="yr__cart-badge uk-badge">15</span></a>
-			</li>
-		</ul>
-
-	</div>
-</div> -->
-<!-- /yr__offcanvas-nav -->
-
 <div id="offcanvas-reveal" uk-offcanvas="mode: reveal;">
-		<div class="uk-offcanvas-bar yr-shadow-inset">
+	<div class="uk-offcanvas-bar yr-offcanvas-bar yr-shadow-inset">
+		<img src="img/logos/logo-white.png" alt="" class="yr-offnavbar-logo">
+		<div class="yr-offcanvas-wrapper">
+			<ul class="uk-nav-default uk-nav-parent-icon" uk-nav="multiple: true">
+				<li class="uk-parent">
+					<a href="#">Parent</a>
+					<ul class="uk-nav-sub">
+						<li>
+							<a href="#">Sub item</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
 
-				<h3>Title</h3>
-
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
+			<ul class="uk-nav uk-nav-default">
+				<li>
+					<a href="#">Active</a>
+				</li>
+				<li class="uk-parent">
+					<a href="#">Parent</a>
+					<ul class="uk-nav-sub">
+						<li>
+							<a href="#">Sub item</a>
+						</li>
+						<li>
+							<a href="#">Sub item</a>
+						</li>
+					</ul>
+				</li>
+				<li class="uk-nav-header">Header</li>
+				<li>
+					<a href="#">
+						<span class="uk-margin-small-right" uk-icon="icon: table"></span>Item</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span>Item</a>
+				</li>
+			</ul>
 		</div>
+	</div>
+	<!-- /uk-offcanvas-bar -->
 </div>
+<!-- /offcanvas-reveal -->
