@@ -1,3 +1,9 @@
+.yr-section-container
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  align-items: center
+
 .yr-sidebar-section
   -moz-transition: all 0.3s
   -webkit-transition: all 0.3s
@@ -5,12 +11,7 @@
   border: none
   color: #fff
   cursor: pointer
-  font-family: inherit
-  font-size: inherit
   font-weight: 700
-  outline: none
-  overflow: hidden
-  position: relative
   text-transform: uppercase
   transition: all 0.3s
   background: $accent
@@ -20,6 +21,7 @@
   display: -ms-flex
   display: flex
   align-items: center
+  position: relative
 
   &::before
     position: absolute
@@ -38,31 +40,28 @@
     font-style: normal
     font-variant: normal
     font-weight: 900
-    height: 100%
+    height: auto
     left: -50%
     line-height: 3.5
     text-rendering: auto
-    top: 50%
     transition: all 0.3s
-    transform: translate(-50%, -50%)
-    z-index: 10
+    z-index: 50
 
   &:hover::before
     left: 5%
 
   &:hover
-    .yr-sidebar__icon--flats
-      background-image: url(/img/icons/FlatsDark.svg)
-      transition: 0.5s
 
-    .yr-sidebar__icon--magnifier
-      background-image: url(/img/icons/MagnifierDark.svg)
+    .yr-sidebar__icon
+      svg
+        g
+          path
+            fill: rgba(255, 255, 255, 0.65)
+            transition: 0.5s
 
-    .yr-sidebar__icon--house
-      background-image: url(/img/icons/HouseDark.svg)
-
-    .yr-sidebar__icon--notebook
-      background-image: url(/img/icons/NotebookDark.svg)
+        path
+          fill: rgba(255, 255, 255, 0.65)
+          transition: 0.5s
 
 .yr-sidebar-section--light-green
   background: $green-light
@@ -99,29 +98,24 @@
   margin: 0
   font-size: 16px
 
-.yr-sidebar__title-container
-  padding: 25px
-  padding-right: 0
-
 .yr-sidebar__icon
   margin: 0 20px
   height: 65px
   min-width: 65px
   transition: 0.5s
   background-repeat: no-repeat
+  position: relative
+  overflow: hidden
 
-.yr-sidebar__icon--flats
-  background-image: url(/img/icons/Flats.svg)
-  transition: 0.5s
+  svg
+    width: 65px
+    height: 65px
 
-.yr-sidebar__icon--magnifier
-  background-image: url(/img/icons/Magnifier.svg)
-  transition: 0.5s
+    g
+      path
+        fill: $white
+        transition: 0.5s
 
-.yr-sidebar__icon--house
-  background-image: url(/img/icons/House.svg)
-  transition: 0.5s
-
-.yr-sidebar__icon--notebook
-  background-image: url(/img/icons/Notebook.svg)
-  transition: 0.5s
+    path
+      fill: $white
+      transition: 0.5s
