@@ -12,7 +12,7 @@
 	.yr-logo
 		padding: 10px 20px
 		padding-top: 0
-		max-width: 350px		
+		max-width: 350px
 
 .yr__header
 	width: 100%
@@ -215,3 +215,38 @@
 
 .contacts__p
 	font-size: $p
+
+// Mobile butons bar
+
+.yr-mobile-contacts-bar
+	display: -webkit-flex
+	display: -ms-flex
+	display: flex
+	position: fixed
+	bottom: 0
+	width: 100%
+
+.yr-mobile__button-contacts
+	background: rgba($blue, 0.8)
+	min-height: 55px
+	max-height: 55px
+	display: -webkit-flex
+	display: -ms-flex
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 50%
+	cursor: pointer
+
+	.yr-mobile__p
+		color: #fff
+		margin: 0
+
+	&:last-child
+		border-right: 1px solid rgba($white, 0.2)
+
+	&:first-child
+		border-left: 1px solid rgba($white, 0.2)
+
+.yr-mobile__icon
+	margin-left: 10px

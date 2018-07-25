@@ -10,57 +10,68 @@ jQuery(document).ready(function() {
 
 	/* Inits */
 
-		// Navbar (sticky)
+	// Navbar (sticky)
 
 	UIkit.navbar(element, options);
 
-		// Navigation canvas ( mobile )
+	// Navigation canvas ( mobile )
 
 	UIkit.nav(element).toggle(index, animate);
 	UIkit.nav(element, options);
 
-		// Slider
+	// Slider
 
 	UIkit.slider(element, options);
 
-		//Modal
+	//Modal
 
 	UIkit.modal(element, options);
 
-		// Countdown ( timer )
+	// Countdown ( timer )
 
 	UIkit.countdown(element, options);
 
-		// Scroll
+	// Scroll
 
 	UIkit.scroll(element, options);
 
-		//Notifications
+	//Notifications
 
 	UIkit.notification(options);
 	UIkit.notification(message, status);
 
-		//Lightboxes
+	//Lightboxes
 
 	UIkit.lightbox(element, options);
 	UIkit.lightboxPanel(panelOptions);
 
-		// Leader
+	// Leader
 
 	UIkit.leader(element, options);
 
-		// Filter
+	// Filter
 
 	UIkit.filter(element, options);
 
-		//Accordion
+	//Accordion
 
 	UIkit.accordion(element, options);
 
-
+	$("js-yr-float-button__wrapper").click(function() { // class of the button div
+		$("").addClass(), // class/id/classes which will hide
+		// $(".main-carousel .owl-nav .owl-next").show();
+		 // class/id/classes which will show
+		return false;
+	});
+	/* second button ( not necessarily ) */
+	$(".main-carousel .owl-nav .owl-next").click(function() { // class of the button div
+		$(".time-wrapper,.burger,.logo,.owl-prev").show(), // class/id/classes which will hide
+		$(".main-carousel .owl-nav .owl-next").hide(); // class/id/classes which will show
+		return false;
+	});
 
 });
 
-$(".happy-meal").click(function(){
-  $(".burger").toggleClass('i-hate-burger');
+$(".happy-meal").click(function() {
+	$(".burger").toggleClass('i-hate-burger');
 })
