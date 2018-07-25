@@ -4,7 +4,29 @@
 .row
 	+row-flex()
 
+@media screen and (max-width: 1700px)
+
+	.contacts__title
+		margin-right: 0
+
+	.yr-header-form
+		justify-content: center
+
+	.yr-button
+		width: 160px
+		margin-top: 20px
+
+	.awards__container
+		margin-top: -150px
+
 @media screen and (max-width: 1600px)
+
+	.yr-button
+		width: 140px
+		margin-top: 0
+
+	.awards__container
+		margin-top: -50px
 
 	.header-contacts__container--mobile
 		border-bottom: 1px solid $accent
@@ -19,7 +41,65 @@
 	.contacts__h2
 		font-size: 2rem
 
+@media screen and (max-width: 1450px)
+
+	.yr-button
+		width: 160px
+		margin-top: 20px
+
 @media screen and (max-width: 1200px)
+
+	.yr-panel-mobile.uk-grid-small.uk-grid-divider
+		margin-right: 0
+
+	.yr-button
+		margin: 0
+
+	.yr-header-h4-label
+		text-align: center
+
+	.yr-header-form
+		display: -webkit-flex
+		display: -ms-flex
+		display: flex
+		align-items: center
+		justify-content: center
+
+		&:before
+			display: none !important
+
+	.yr-header-form--contacts
+
+		&::after
+			content: ""
+			position: absolute
+			bottom: 0
+			left: 50%
+			height: 1px
+			width: 80%
+			background: $accent
+			transform: translate(-50%, -50%)
+
+	.awards__container
+		margin: 0
+
+	.yr-info-section
+		display: -webkit-flex
+		display: -ms-flex
+		display: flex
+		align-items: center
+		justify-content: center
+
+	.yr-brending
+		h2,
+		h1
+			text-align: center
+
+	.yr-awards
+		display: -webkit-flex
+		display: -ms-flex
+		display: flex
+		justify-content: center
 
 	.yr-burger__wrapper
 		min-height: 60px
@@ -33,6 +113,27 @@
 		.yr-logo
 			padding-top: 10px
 
+@media screen and (max-width: 960px)
+
+	.yr-header-info
+		height: 60vh
+
+	.yr__logo-wrapper
+		justify-content: flex-end
+
+		a
+			display: -webkit-flex
+			display: -ms-flex
+			display: flex
+			justify-content: flex-end
+
+
+	.yr-sidebar__title
+		justify-content: center
+
+		.yr-sidebar__h3
+			text-align: center
+
 @media screen and (max-width: 780px)
 
 	// Display none/block elements
@@ -42,8 +143,28 @@
 
 	// Media styles
 
-	.yr-logo
-		width: 70%
+	.yr-info-section
+		align-items: flex-end
+
+	.awards__container
+		margin-bottom: 20px
+
+	.yr-awards .awards__img
+		height: 50px
+
+	.brending__h1
+		color: $white
+
+	.yr__logo-wrapper
+		width: 100%
+
+		a
+			width: 80%
+
+			.yr-logo
+				width: 100%
+				height: 100%
+				float: left
 
 	.parallax
 		position: static
@@ -52,6 +173,14 @@
 
 	.yr__mobile-nav
 		width: 95%
+
+	h1,
+	.brending__h1
+		font-size: 2.5em
+
+	h2,
+	.brending__h2
+		font-size: 2em
 
 // Tabs
 
