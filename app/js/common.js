@@ -75,3 +75,13 @@ $('.call_form .yr-float-close').click(function() {
 	$('.call_form').removeClass('in').animate({width: "toggle", opacity: "0"});
 	$('#js-yr-float-button__wrapper').css('opacity', '1');
 });
+
+// Mobile form
+
+$('#js-mobile-form').click(function() {
+	$('.yr-float-buttons--mobile').addClass('in').animate({height: "toggle", opacity: "1"});
+});
+$('#js-yr-float-buttons--mobile-close').click(function() {
+	$('.yr-float-buttons--mobile').removeClass('in').animate({
+		height: "toggle", opacity: "0"});
+});
