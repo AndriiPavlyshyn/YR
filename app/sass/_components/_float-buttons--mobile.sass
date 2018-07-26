@@ -2,6 +2,11 @@
   position: fixed
   bottom: 55px
   width: 100%
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  display: none
+  z-index: 7
 
   p
     text-align: center
@@ -21,6 +26,7 @@
     padding: 30px 40px 50px 40px
     overflow: hidden
     height: 330px
+    background: $white-milk
 
   .yr-button
     width: 100%
@@ -38,3 +44,6 @@
     margin-bottom: 20px
     margin: 20px auto
     cursor: pointer
+
+.yr-float-buttons--mobile.in
+  // display: block
