@@ -1,0 +1,152 @@
+.yr-about-section
+  position: relative
+
+.yr-about__parallax-container
+  width: 100%
+  padding: -1px
+  position: absolute
+  top: 0
+  left: 0
+
+  .uk-background-cover
+    height: auto
+    position: relative
+
+.yr-about-first-content
+  position: relative
+  z-index: 10
+
+  .yr-about-portret
+    position: static
+
+.yr-about-checks
+  position: relative
+  z-index: 5
+
+.yr-green-text
+  font-size: 1.3125rem
+  color: $accent
+  margin: 0
+
+.yr-check-p
+  font-size: 1.125rem
+
+.yr-check-list
+  width: 80%
+  margin: 30px 0
+  margin-bottom: 0
+
+  li
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    line-height: 1.25
+    position: relative
+    padding-right: 40px
+
+    &::after
+      content: ""
+      height: 26px
+      width: 26px
+      position: absolute
+      right: 0
+      top: 0px
+      background-image: url(../img/icons/bullet.png)
+      background-repeat: no-repeat
+      background-position: 0 0
+
+    img
+      width: 100%
+
+.yr-mobile-flex
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+
+.yr-mobile-flex--column
+  flex-direction: column
+
+.yr-parallax
+  background-position: 20px 100px
+
+  .yr-svg
+    height: 120%
+    width: 180%
+    margin-bottom: -1px
+
+.yr-about__heading
+  font-size: 3.125rem
+  padding-right: 20px
+  position: relative
+  margin: 0
+
+  &::after
+    content: ""
+    width: 3px
+    background: $accent
+    height: 60%
+    position: absolute
+    right: 0
+    top: 50%
+    transform: translate(-50%, -50%)
+
+.yr-about__content--quote
+  border: 1px solid #ebebeb
+  border-left: none
+  border-right: none
+
+.yr-green-text--no
+  color: #636476
+
+.yr-about__content
+  .yr-green-text--info
+    width: 80%
+
+  .yr-green-text
+    margin-bottom: 30px
+
+  .yr-about-quote
+    font-style: italic
+    line-height: 1.5
+    font-size: 1.125rem
+    padding-right: 70px
+    position: relative
+    width: 70%
+    margin: 30px 0
+
+    &::after
+      content: ""
+      position: absolute
+      width: 50px
+      height: 40px
+      right: 0
+      top: 0
+      background-repeat: no-repeat
+      background-size: cover
+      background-image: url(../img/icons/quote.png)
+
+.yr-about-p-container
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+
+.yr-signature
+  margin-left: 20px
+  position: relative
+  top: -20px
+
+.yr-p
+  color: #3d3d3d
+  font-size: 1.125rem
+  line-height: 1.44
+  margin-bottom: 20px
+
+.yr-p--about
+  width: 70%
+
+.uk-button.yr-button.yr-button--about
+  height: 6.1vh
+  position: absolute
+  bottom: 0
