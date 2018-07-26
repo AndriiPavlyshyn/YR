@@ -263,6 +263,72 @@
 	display: flex
 	align-items: center
 	flex-direction: column
+	padding: 0
 
 	.yr-offnavbar-logo
-		width: 80%
+		width: 95%
+		padding: 20px
+
+.yr-offcanvas-wrapper
+	.uk-nav-default
+		li
+			padding: 10px 0
+			font-size: 1.5rem
+			border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+			color: $white
+
+			a
+				margin-right: 30px
+				color: $white
+				padding: 0
+
+				&:hover,
+				&:focus
+					color: $white
+
+		.uk-parent
+			a
+				position: relative
+				padding: 0
+
+				&::after
+					content: "\f104"
+					font-family: "Font Awesome 5 Free"
+					-webkit-font-smoothing: antialiased
+					font-style: normal
+					font-variant: normal
+					font-weight: 900
+					text-rendering: auto
+					font-size: 18px
+					display: -webkit-flex
+					display: -ms-flex
+					display: flex
+					align-items: center
+					justify-content: center
+					color: $accent
+					position: absolute
+					left: 30px
+					top: 50%
+					transform: translate(0%, -50%) rotate(-90deg)
+
+		ul
+			li
+				border-bottom: 0
+				padding-bottom: 0
+
+				a
+					margin-right: 50px
+					padding: 0
+
+					&::after
+						display: none !important
+
+		.uk-parent.uk-open
+			li
+				padding-top: 10px
+
+			a
+				color: $white
+
+				&::after
+					background-image: none
