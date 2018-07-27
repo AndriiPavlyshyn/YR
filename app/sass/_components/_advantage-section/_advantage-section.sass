@@ -1,9 +1,8 @@
-.yr-advantage
-  height: 50px
-  background: red
-  border-right: 1px solid #fff
-
 .yr-advantages
+  background: #f4faec
+  padding: 4.2vh 0
+  margin-bottom: 20px
+
   .uk-container
     display: -webkit-flex
     display: -ms-flex
@@ -15,3 +14,27 @@
 
     *
       float: right
+
+.yr-advantage
+  border-right: 1px solid $accent
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+
+  &:last-child
+    border-left: 1px solid $accent
+
+  .yr-advantage-icon
+    height: 100%
+    width: auto
+    min-height: 60px
+    min-width: 60px
+
+  .yr-advantage-p
+    line-height: 1.35
+    font-weight: 700
+    font-size: 1.25rem
+    color: #182023
