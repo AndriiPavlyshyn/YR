@@ -51,6 +51,7 @@ gulp.task('scripts-min', function() {
 gulp.task('js-concat', function() {
 	return gulp.src(['app/js/jquery.min.js', 'app/js/uikit.min.js',
 	'app/js/uikit-icons.min.js',
+	'app/js/owl.carousel.min.js',
 	'app/js/common.js'
 	// ,'app/js/product/common.js'
 ])

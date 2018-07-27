@@ -6,6 +6,17 @@
 
 @media screen and (max-width: 1700px)
 
+	.yr-check-list
+		margin: 0
+
+	.yr-mobile-flex
+		margin: 0
+		margin-bottom: 10px
+
+	.yr-about-first-content
+		.yr-portret-wrapper
+			margin-top: 180px
+
 	.contacts__title
 		margin-right: 0
 
@@ -61,6 +72,10 @@
 		margin-top: 20px
 
 @media screen and (max-width: 1200px)
+
+	.yr-about__content .yr-about-quote,
+	.yr-about-p-container
+		padding-right: 50px
 
 	.uk-button.yr-button.yr-button--about
 		position: static
@@ -131,7 +146,8 @@
 
 @media screen and (max-width: 960px)
 
-	.yr-button--about
+	.yr-about-me
+		margin: 0
 
 	.yr-sidebar__icon
 		width: 55px
@@ -253,24 +269,48 @@
 			max-height: 90px
 			width: 100%
 
-	.yr-personal-wrapper
+	.yr-mobile-container
+		display: -webkit-flex
+		display: -ms-flex
+		display: flex
+		flex-direction: column
 		justify-content: center
-		margin-right: 30px
 
 	.yr-signature
-		width: 100%
-		max-width: 110px
+		width: 90px
 
 	.yr-mobile-w
-		width: 30%
+		width: 100%
+		margin: 10px 0
+		margin-bottom: 0
 
-		img
-			top: 0
+	.yr-personal-wrapper
+		margin: 0
+		display: -webkit-flex
+		display: -ms-flex
+		display: flex
+		flex-direction: row
+		align-items: center
+		justify-content: flex-start
+		margin-bottom: 30px
+
+	.yr-about__content
+		padding: 0
+		width: 100%
+
+	.yr-about-child
+		padding-right: 0
+
+	.yr-mobile-portret
+		margin-left: 20px
 
 	.yr-mobile-flex
 		display: -webkit-flex
 		display: -ms-flex
 		display: flex
+
+	.yr-about__content .yr-about-quote::after
+		top: 20px
 
 	.yr-about__content--quote
 		position: relative
@@ -278,7 +318,9 @@
 
 	.yr-about-p-container
 		flex-direction: column
-		margin-right: 70px
+
+	.yr-about__content .yr-about-quote
+		margin-bottom: 0
 
 	.yr-about__content .yr-about-quote
 		position: static
@@ -292,6 +334,7 @@
 
 	.yr-check-list
 		li
+			width: 60%
 			margin-bottom: 20px
 
 // Tabs

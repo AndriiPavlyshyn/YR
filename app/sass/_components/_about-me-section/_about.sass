@@ -1,40 +1,114 @@
+.yr-about
+  .uk-container
+    *
+      float: right
+
 .yr-about-section
   position: relative
 
+.yr-about-section--info
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  flex-direction: column
+
+.yr-flex-container
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  flex-direction: column
+
 .yr-about__parallax-container
-  width: 100%
-  padding: -1px
+  padding: 0
+  padding-left: -1px
   position: absolute
   top: 0
-  left: 0
+  left: 50px
+  width: calc(50% - 80px)
 
   .uk-background-cover
+    width: 100%
+    position: absolute
+    left: 20px
     height: auto
-    position: relative
+
+.yr-about-grid
+  position: relative
+
+.yr-svg
+  width: 120%
+  height: 180%
+
+.yr-mobile-portret
+  height: 90px
+  width: 90px
+  background-size: 110%
+  background-repeat: no-repeat
+  background-position: 0 0
+
+.yr-mobile-container
+  flex-direction: column
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+
+.yr-about__content--mobile-button
+  margin-top: 30px
 
 .yr-about-first-content
-  position: relative
-  z-index: 10
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  justify-content: center
+  align-items: flex-end
 
-  .yr-about-portret
-    position: static
+  .yr-portret-wrapper
+    width: 95%
+    position: relative
+    z-index: 5
+    margin-top: 180px
+
+    .yr-about-portret
+      position: static
+      width: 100%
 
 .yr-about-checks
-  position: relative
   z-index: 5
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
 
 .yr-green-text
   font-size: 1.3125rem
   color: $accent
   margin: 0
 
+.yr-personal-wrapper
+  width: 100%
+
+.yr-about-me
+  width: 100%
+  margin-top: 190px
+
+  .yr-about-child
+    position: relative
+    z-index: 5
+    align-items: center
+
 .yr-check-p
   font-size: 1.125rem
 
+.yr-about-heading
+  width: 90%
+  position: relative
+  z-index: 5
+
 .yr-check-list
-  width: 80%
-  margin: 30px 0
+  width: 100%
   margin-bottom: 0
+  margin-top: 10px
 
   li
     display: -webkit-flex
@@ -71,11 +145,6 @@
 .yr-parallax
   background-position: 20px 100px
 
-  .yr-svg
-    height: 120%
-    width: 180%
-    margin-bottom: -1px
-
 .yr-about__heading
   font-size: 3.125rem
   padding-right: 20px
@@ -101,8 +170,11 @@
   color: #636476
 
 .yr-about__content
+  padding-right: 2vw
+  width: 80%
+
   .yr-green-text--info
-    width: 80%
+    width: 100%
 
   .yr-green-text
     margin-bottom: 30px
@@ -111,9 +183,8 @@
     font-style: italic
     line-height: 1.5
     font-size: 1.125rem
-    padding-right: 70px
+    padding-right: 4vw
     position: relative
-    width: 70%
     margin: 30px 0
 
     &::after
@@ -131,11 +202,11 @@
   display: -webkit-flex
   display: -ms-flex
   display: flex
+  padding-right: 4vw
 
 .yr-signature
   margin-left: 20px
   position: relative
-  top: -20px
 
 .yr-p
   color: #3d3d3d
@@ -143,10 +214,23 @@
   line-height: 1.44
   margin-bottom: 20px
 
-.yr-p--about
-  width: 70%
+.yr-about-content-container
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  flex-direction: column
+  margin: 20px 0
+
+  .yr-p
+    margin: 10px
 
 .uk-button.yr-button.yr-button--about
-  height: 6.1vh
-  position: absolute
-  bottom: 0
+  height: 55px
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  align-items: center
+  justify-content: reverse
+
+.yr-test
+  height: 100%
