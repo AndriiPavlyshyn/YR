@@ -82,6 +82,42 @@ $('#js-mobile-form').click(function() {
 	$('.yr-float-buttons--mobile').addClass('in').animate({height: "toggle", opacity: "1"});
 });
 $('#js-yr-float-buttons--mobile-close').click(function() {
-	$('.yr-float-buttons--mobile').removeClass('in').animate({
-		height: "toggle", opacity: "0"});
+	$('.yr-float-buttons--mobile').removeClass('in').animate({height: "toggle", opacity: "0"});
 });
+
+// Testimonials carousel
+
+$('.testimonial-carousel').owlCarousel({
+    loop:true,
+		mouseDrag: false,
+		touchDrag: false,
+		freeDrag: false,
+    margin:10,
+    nav:true,
+		dots:false,
+		rtl:true,
+		animateOut : "slideOutUp",
+		animateIn : "slideInUp",
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+
+// Custom nav for carousel
+
+var mda = $('.content-carousel');
+mda.owlCarousel();
+$('.main-custom-next').click(function() {
+  mda.trigger('next.owl.carousel');
+})
+$('.main-custom-prev').click(function() {
+  mda.trigger('prev.owl.carousel', [300]); // в квадратных скобках скорость переключения
+})
