@@ -87,37 +87,20 @@ $('#js-yr-float-buttons--mobile-close').click(function() {
 
 // Testimonials carousel
 
-$('.testimonial-carousel').owlCarousel({
-    loop:true,
-		mouseDrag: false,
-		touchDrag: false,
-		freeDrag: false,
-    margin:10,
-    nav:true,
-		dots:false,
-		rtl:true,
-		animateOut : "slideOutUp",
-		animateIn : "slideInUp",
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:1
-        }
-    }
-})
+$('.testimonial-carousel').slick({
+	dots: false,
+	vertical: true,
+	slidesToShow: 2,
+	slidesToScroll: 1,
+	// verticalSwiping: true,
+	arrows: false
+ });
 
-// Custom nav for carousel
+// Custom navigation for testimonial slider
 
-var mda = $('.content-carousel');
-mda.owlCarousel();
-$('.main-custom-next').click(function() {
-  mda.trigger('next.owl.carousel');
-})
-$('.main-custom-prev').click(function() {
-  mda.trigger('prev.owl.carousel', [300]); // в квадратных скобках скорость переключения
-})
+$('.arrow--testi-next').on('click', function() {
+  $('.testimonial-carousel').slick('slickNext');
+});
+$('.arrow--testi-prev').on('click', function() {
+  $('.testimonial-carousel').slick('slickPrev');
+});

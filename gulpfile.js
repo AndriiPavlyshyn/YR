@@ -53,7 +53,7 @@ gulp.task('js-concat', function() {
 	'app/js/jquery.min.js',
 	'app/js/uikit.min.js',
 	'app/js/uikit-icons.min.js',
-	'app/js/owl.carousel.min.js',
+	'app/js/slick.min.js',
 	'app/js/common.js'
 	// ,'app/js/product/common.js'
 ])
@@ -71,7 +71,7 @@ gulp.task('css-libs', ['sass'], function() {
 });
 
 gulp.task('css-redirect', function() {
-	return gulp.src(['app/css/uikit-rtl.min.css', 'app/css/owl.theme.default.min.css', 'app/css/owl.carousel.min.css'])
+	return gulp.src(['app/css/uikit-rtl.min.css', 'app/css/owl.theme.default.min.css', 'app/css/slick-theme.css', 'app/css/slick.css', 'app/css/owl.carousel.min.css'])
 		.pipe(gulp.dest('builder/css')) // Выгружаем в папку
 		.pipe(browserSync.reload({stream: true}))
 });

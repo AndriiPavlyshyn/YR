@@ -70,26 +70,88 @@ p.yr-green-text--testimonials
 .yr-testimonials__section
   position: relative
 
-.test-wrapper
-  width: 100%
+.testimonial-item
+  padding-bottom: 101px
 
-.owl-carousel
-  height: 200px
-
-.owl-stage-outer
-  height: 200px
-
-  .item
-    background: #000
+.testimonial-nav
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin-bottom: 30px
 
 .yr-about-quote--testimonial
   color: #202b2f
   line-height: 1.5
   font-size: 1.125rem
   font-style: italic
+  margin: 0
 
 .yr-testimonial
-  max-height: 200px
-  max-width: 200px
-  height: 200px
-  width: 200px
+  background: $white
+  padding: 30px
+  border-radius: 10px
+  position: relative
+  max-width: 610px
+
+  &::after
+    content: ""
+    display: block
+    border: 20px solid transparent
+    border-left: 20px solid $white
+    border-top: 20px solid $white
+    position: absolute
+    bottom: -40px
+    right: 20px
+
+.yr-testimonial-client-photo-wrapper
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  width: 50px
+  height: 50px
+  border-radius: 100px
+  overflow: hidden
+  align-items: center
+  justify-content: center
+  margin-left: 15px
+
+  img
+    width: 100%
+
+.testimonial-carousel
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  flex-direction: column
+
+  *
+
+    &:focus
+      outline: none
+
+.testimonial-content-wrapper
+  width: 80%
+
+.yr-testimonial--name
+  margin-right: 70px
+  margin-top: 10px
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  align-items: center
+
+  p
+    margin: 0
+
+.testimonial-quote-wrapper
+  width: 36px
+  height: 29px
+  position: absolute
+  left: 30px
+  top: -15px
+
+.first-testimonial,
+.second-testimonial
+  padding-top: 20px

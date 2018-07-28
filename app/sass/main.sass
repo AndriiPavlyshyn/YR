@@ -143,6 +143,34 @@ a:active
 	-moz-box-shadow: inset 3px 0px 5px 0px rgba(0,0,0,0.75)
 	box-shadow: inset 3px 0px 5px 0px rgba(0,0,0,0.75)
 
+.carousel-nav
+	display: -webkit-flex
+	display: -ms-flex
+	display: flex
+
+	.arrow
+		height: 50px
+		width: 50px
+		border: solid 3px $white
+		display: -webkit-flex
+		display: -ms-flex
+		display: flex
+		align-items: center
+		justify-content: center
+		color: $accent
+		border-radius: 100px
+		margin-left: 10px
+		transition: 0.5s
+		font-size: 0.8rem
+
+		&:last-child
+			margin: 0
+
+		&:hover
+			background: $white
+			transition: 0.5s
+			cursor: pointer
+
 /* Header */
 
 @import "_components/_header/header"
