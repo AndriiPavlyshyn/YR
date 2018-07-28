@@ -6,6 +6,17 @@
 
 @media screen and (max-width: 1700px)
 
+	.yr-check-list
+		margin: 0
+
+	.yr-mobile-flex
+		margin: 0
+		margin-bottom: 10px
+
+	.yr-about-first-content
+		.yr-portret-wrapper
+			margin-top: 180px
+
 	.contacts__title
 		margin-right: 0
 
@@ -15,6 +26,9 @@
 	.yr-button
 		width: 160px
 		margin-top: 20px
+
+	.uk-button.yr-button.yr-button--about
+		width: auto
 
 	.awards__container
 		margin-top: -150px
@@ -58,6 +72,27 @@
 		margin-top: 20px
 
 @media screen and (max-width: 1200px)
+
+	.carousel-nav .arrow
+		width: 40px
+		height: 40px
+
+	.testimonial-item
+		padding-bottom: 30px
+
+	.yr-logos-wrapper
+		width: 100%
+		display: -webkit-flex
+		display: -ms-flex
+		display: flex
+		justify-content: center
+
+	.yr-about__content .yr-about-quote,
+	.yr-about-p-container
+		padding-right: 50px
+
+	.uk-button.yr-button.yr-button--about
+		position: static
 
 	.yr-panel-mobile.uk-grid-small.uk-grid-divider
 		margin-right: 0
@@ -123,7 +158,60 @@
 		.yr-logo
 			padding-top: 10px
 
+	.yr-advantage
+
+	  &:nth-child(2)
+	    border-left: 1px solid $accent
+
 @media screen and (max-width: 960px)
+
+	.yr-testimonial
+		max-width: 100%
+
+	.arrow--testi-prev
+		transform: rotate(90deg)
+
+	.arrow--testi-next
+		transform: rotate(90deg)
+
+	.testimonial-content-wrapper
+		width: 100%
+
+	.yr-container--advantages
+		padding: 0
+
+	.yr-advantage
+		border: none
+		border-bottom: 1px solid $accent
+		flex-direction: row
+		justify-content: flex-start
+		margin: 0 !important
+		padding: 10px 20px
+		align-items: center
+
+		.yr-advantage-p
+			margin: 0
+			margin-right: 20px
+
+		&:last-child,
+		&:nth-child(2),
+			border: none
+
+		&:nth-child(2)
+			border-bottom: 1px solid $accent
+
+	.yr-about-me
+		margin: 0
+
+	.yr-sidebar__icon
+		width: 55px
+		height: 55px
+		padding: 20px
+		padding-bottom: 10px
+
+		svg
+			width: 55px
+			height: 55px
 
 	.yr-header-info
 		height: 60vh
@@ -211,18 +299,97 @@
 	.parallax
 		position: static
 
-@media screen and (max-width: 560px)
+	.yr-about__content .yr-green-text--info
+		width: 100%
+
+@media screen and (max-width: 640px)
+
+	.yr-check-list
+		width: 100%
+
+	.yr-about-heading
+		display: -webkit-flex
+		display: -ms-flex
+		display: flex
+		flex-direction: row
+		width: 100%
+
+	.yr-about-checks
+		width: 100%
+		overflow: hidden
+
+		.yr-about-portret
+			max-width: 90px
+			max-height: 90px
+			width: 100%
+
+	.yr-mobile-container
+		display: -webkit-flex
+		display: -ms-flex
+		display: flex
+		flex-direction: column
+		justify-content: center
+
+	.yr-signature
+		width: 90px
+
+	.yr-mobile-w
+		width: 100%
+		margin: 10px 0
+		margin-bottom: 0
+
+	.yr-personal-wrapper
+		margin: 0
+		display: -webkit-flex
+		display: -ms-flex
+		display: flex
+		flex-direction: row
+		align-items: center
+		justify-content: flex-start
+		margin-bottom: 30px
+
+	.yr-about__content
+		padding: 0
+		width: 100%
+
+	.yr-about-child
+		padding-right: 0
+
+	.yr-mobile-portret
+		margin-left: 20px
+
+	.yr-mobile-flex
+		display: -webkit-flex
+		display: -ms-flex
+		display: flex
+
+	.yr-about__content .yr-about-quote::after
+		top: 20px
+
+	.yr-about__content--quote
+		position: relative
+		width: 100%
+
+	.yr-about-p-container
+		flex-direction: column
+
+	.yr-about__content .yr-about-quote
+		margin-bottom: 0
+
+	.yr-about__content .yr-about-quote
+		position: static
+		width: auto
 
 	.yr__mobile-nav
 		width: 95%
 
-	// h1,
-	// .brending__h1
-	// 	font-size: 2.5em
+	.yr-p--about
+		width: auto
 
-	// h2,
-	// .brending__h2
-	// 	font-size: 2em
+	.yr-check-list
+		li
+			width: 60%
+			margin-bottom: 20px
 
 // Tabs
 

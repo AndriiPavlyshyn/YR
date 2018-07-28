@@ -82,6 +82,37 @@ $('#js-mobile-form').click(function() {
 	$('.yr-float-buttons--mobile').addClass('in').animate({height: "toggle", opacity: "1"});
 });
 $('#js-yr-float-buttons--mobile-close').click(function() {
-	$('.yr-float-buttons--mobile').removeClass('in').animate({
-		height: "toggle", opacity: "0"});
+	$('.yr-float-buttons--mobile').removeClass('in').animate({height: "toggle", opacity: "0"});
+});
+
+// Testimonials carousel
+
+$('.testimonial-carousel').slick({
+	dots: false,
+	vertical: true,
+	draggable: false,
+	slidesToShow: 2,
+	slidesToScroll: 1,
+	arrows: false,
+	responsive: [
+		{
+			breakpoint: 960,
+			settings: {
+				rtl: true,
+				vertical: false,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				infinite: true
+			}
+		}
+	]
+});
+
+// Custom navigation for testimonial slider
+
+$('.arrow--testi-next').on('click', function() {
+	$('.testimonial-carousel').slick('slickNext');
+});
+$('.arrow--testi-prev').on('click', function() {
+	$('.testimonial-carousel').slick('slickPrev');
 });
