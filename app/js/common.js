@@ -90,17 +90,29 @@ $('#js-yr-float-buttons--mobile-close').click(function() {
 $('.testimonial-carousel').slick({
 	dots: false,
 	vertical: true,
+	draggable: false,
 	slidesToShow: 2,
 	slidesToScroll: 1,
-	// verticalSwiping: true,
-	arrows: false
- });
+	arrows: false,
+	responsive: [
+		{
+			breakpoint: 960,
+			settings: {
+				rtl: true,
+				vertical: false,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				infinite: true
+			}
+		}
+	]
+});
 
 // Custom navigation for testimonial slider
 
 $('.arrow--testi-next').on('click', function() {
-  $('.testimonial-carousel').slick('slickNext');
+	$('.testimonial-carousel').slick('slickNext');
 });
 $('.arrow--testi-prev').on('click', function() {
-  $('.testimonial-carousel').slick('slickPrev');
+	$('.testimonial-carousel').slick('slickPrev');
 });
