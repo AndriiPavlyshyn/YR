@@ -1,0 +1,68 @@
+@keyframes animatedBackground
+  0
+    background-position: 0 0
+
+  100%
+    background-position: -1200px 0
+
+@-moz-keyframes animatedBackground
+  0
+    background-position: 0 0
+
+  100%
+    background-position: -1200px 0
+
+@-webkit-keyframes animatedBackground
+  0
+    background-position: 0 0
+
+  100%
+    background-position: -1200px 0
+
+@-o-keyframes animatedBackground
+  0
+    background-position: 0 0
+
+  100%
+    background-position: -600px 0
+
+.yr-partners-bg
+  height: auto
+  width: 100%
+  position: absolute
+  background-size: cover
+  background-repeat: repeat-x
+  background-image: url('../img/bg/partners.jpg')
+  animation: animatedBackground 60s linear infinite
+  -moz-animation: animatedBackground 60s linear infinite
+  -webkit-animation: animatedBackground 60s linear infinite
+  -o-animation: animatedBackground 60s linear infinite
+
+.partners-content-container
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  justify-content: center
+  flex-direction: column
+  align-items: center
+
+  .yr-sertifications__p-wrapper
+    margin: 0
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    justify-content: center
+    margin-bottom: 10px
+
+    .yr-advantage-p
+      width: 60%
+      text-align: center
+
+.yr-partners-bg
+  padding: 200px 0
+
+.yr-divider-small
+  width: 60px
+  height: 2px
+  background: $accent
+  margin: 20px 0
