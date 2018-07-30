@@ -85,12 +85,13 @@ $('#js-yr-float-buttons--mobile-close').click(function() {
 	$('.yr-float-buttons--mobile').removeClass('in').animate({height: "toggle", opacity: "0"});
 });
 
-// Testimonials carousel
+// Testimonials slider
 
 $('.testimonial-carousel').slick({
 	dots: false,
 	vertical: true,
 	draggable: false,
+	infinite: true,
 	slidesToShow: 2,
 	slidesToScroll: 1,
 	arrows: false,

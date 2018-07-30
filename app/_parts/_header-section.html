@@ -45,3 +45,31 @@
 	<!-- /uk-container-expand -->
 </div>
 <!-- /yr-header__form-wrapper -->
+
+<!-- Header section -->
+<div class="uk-grid-collapse uk-grid" uk-grid>
+	<!-- Header info section -->
+	@@include('./_header/_header-info.html')
+
+	<!-- Header sidebar -->
+	@@include('./_header/_header-sidebar.html')
+</div>
+<!-- /uk-grid-collapse -->
+
+<div class="yr-mobile-contacts-bar uk-hidden@m">
+	<div class="yr-mobile__button-contacts">
+		<a href="tel:">
+			<div class="yr-mobile__icon">
+				<img src="img/icons/phone-icon-white.png" alt="">
+			</div>
+			<p class="yr-mobile__p">ייעוץ ראשוני</p>
+		</a>
+	</div>
+	<div id="js-mobile-form" class="yr-mobile__button-contacts">
+		<div class="yr-mobile__icon">
+			<img src="img/icons/mobile-call-icon.png" alt="">
+		</div>
+		<p class="yr-mobile__p">חייגו עכשיו</p>
+	</div>
+</div>
+<!-- /yr-mobile-contacts-bar -->
