@@ -6,6 +6,9 @@
 
 @media screen and (max-width: 1700px)
 
+	.yr-to-top
+		right: 0
+
 	.yr-check-list
 		margin: 0
 
@@ -23,10 +26,6 @@
 	.yr-header-form
 		justify-content: center
 
-	.yr-button
-		width: 160px
-		margin-top: 20px
-
 	.uk-button.yr-button.yr-button--about
 		width: auto
 
@@ -42,14 +41,10 @@
 
 @media screen and (max-width: 1600px)
 
-	.yr__logo-wrapper .yr-logo
-		width: 90%
-
 	.yr-main-contacts .yr-button
 		margin-top: 30px
 
 	.yr-button
-		width: 140px
 		margin-top: 0
 
 	.awards__container
@@ -74,11 +69,21 @@
 	html
 		font-size: 11.5px
 
-	.yr-button
-		width: 160px
-		margin-top: 20px
-
 @media screen and (max-width: 1200px)
+
+	.yr-sidebar
+		max-width: 40%
+		width: 40%
+
+	.yr-button
+		padding: 0 5vw
+
+	.yr-header-info
+		width: 60%
+		min-width: 60%
+
+	.yr-navbar-wrapper
+		height: 61px
 
 	.carousel-nav .arrow
 		width: 40px
@@ -120,18 +125,6 @@
 		&:before
 			display: none !important
 
-	.yr-header-form--contacts
-
-		&::after
-			content: ""
-			position: absolute
-			bottom: 0
-			left: 50%
-			height: 1px
-			width: 80%
-			background: $accent
-			transform: translate(-50%, -50%)
-
 	.awards__container
 		margin: 0
 
@@ -157,13 +150,16 @@
 		min-height: 60px
 		background: $green-lighter
 		border-left: 1px solid darken($green-lighter, 10%)
+		position: absolute
+		right: 0
 
 	.yr__logo-wrapper
-		justify-content: flex-end
+		height: 61px
+		position: absolute
+		right: 0px
 
-	.yr__logo-wrapper
-		.yr-logo
-			padding-top: 10px
+		div
+			width: 50%
 
 	.yr-advantage
 
@@ -172,8 +168,49 @@
 
 @media screen and (max-width: 960px)
 
-	.yr-main-contacts-form
-		padding-bottom: 300px
+	.yr-advantages
+		padding-top: 0
+
+	.yr-awards
+		width: 100%
+
+	.yr__logo-wrapper
+		right: 50px
+
+	.header-top-wrapper
+		flex-wrap: wrap
+
+	.digit-wrapper
+		flex-direction: column
+		align-items: flex-end
+
+		.yr-p--digit
+			order: 1
+
+		.digit
+			width: 65%
+			margin: 0
+
+	.yr-contacts
+		background-image: none
+		background: #efede1
+		padding-bottom: 0
+
+	.yr-copiright-bottom
+		margin-bottom: 50px
+
+	.footer-content-container
+		display: -webkit-flex
+		display: -ms-flex
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+
+		.yr-footer-p
+			margin: 0 !important
+
+		.yr-footer-p-container
+			align-items: flex-start
 
 	.yr-main-contacts-form
 		width: 100%
@@ -259,6 +296,7 @@
 
 	.yr-header-info
 		height: 60vh
+		width: 100%
 
 	.yr__logo-wrapper
 		justify-content: flex-end
@@ -283,6 +321,9 @@
 		display: -ms-flex
 		display: flex
 		flex-wrap: wrap
+		width: 100%
+		min-width: 100%
+		order: 1
 
 		.sidebar__title-h4
 			display: none
@@ -301,8 +342,16 @@
 		&::before
 			display: none
 
-		// .sidebar__title-h3
-		// 	font-size: 1.5rem
+	.yr-social-bar--mobile
+		width: 100%
+		justify-content: center
+
+		.yr-social
+			max-height: 40px
+			max-width: 40px
+			height: 40px
+			width: 40px
+			font-size: 0.75rem
 
 @media screen and (max-width: 780px)
 
@@ -329,17 +378,6 @@
 	.brending__h1
 		color: $white
 
-	.yr__logo-wrapper
-		width: 100%
-
-		a
-			width: 80%
-
-			.yr-logo
-				width: 100%
-				height: 100%
-				float: left
-
 	.parallax
 		position: static
 
@@ -347,6 +385,13 @@
 		width: 100%
 
 @media screen and (max-width: 640px)
+
+	.yr-main-contacts-form
+		padding-bottom: 300px
+
+	.yr-footer-icon
+		max-height: 28px
+		margin-left: 10px
 
 	.yr-contacts
 		padding-top: 0
