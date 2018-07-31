@@ -175,8 +175,37 @@
 
 @media screen and (max-width: 960px)
 
-	.yr-main-contacts-form
-		padding-bottom: 300px
+	.digit-wrapper
+		flex-direction: column
+		align-items: flex-end
+
+		.yr-p--digit
+			order: 1
+
+		.digit
+			width: 65%
+			margin: 0
+
+	.yr-contacts
+		background-image: none
+		background: #efede1
+		padding-bottom: 0
+
+	.yr-copiright-bottom
+		margin-bottom: 50px
+
+	.footer-content-container
+		display: -webkit-flex
+		display: -ms-flex
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+
+		.yr-footer-p
+			margin: 0 !important
+
+		.yr-footer-p-container
+			align-items: flex-start
 
 	.yr-main-contacts-form
 		width: 100%
@@ -304,8 +333,16 @@
 		&::before
 			display: none
 
-		// .sidebar__title-h3
-		// 	font-size: 1.5rem
+	.yr-social-bar--mobile
+		width: 100%
+		justify-content: center
+
+		.yr-social
+			max-height: 40px
+			max-width: 40px
+			height: 40px
+			width: 40px
+			font-size: 0.75rem
 
 @media screen and (max-width: 780px)
 
@@ -350,6 +387,13 @@
 		width: 100%
 
 @media screen and (max-width: 640px)
+
+	.yr-main-contacts-form
+		padding-bottom: 300px
+
+	.yr-footer-icon
+		max-height: 28px
+		margin-left: 10px
 
 	.yr-contacts
 		padding-top: 0
