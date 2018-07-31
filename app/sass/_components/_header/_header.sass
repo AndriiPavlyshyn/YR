@@ -53,6 +53,21 @@
 			a
 				font-size: $p
 
+.menu-item-has-children
+	position: relative
+	display: -webkit-flex
+	display: -ms-flex
+	display: flex
+
+	&::before
+		content: "\f078"
+		font-weight: 900
+		font-family: "Font Awesome 5 Free"
+		position: absolute
+		left: 11%
+		top: 38%
+		color: $accent
+
 .yr__lg-nav
 	li
 		border: 1px solid $grey
@@ -71,7 +86,7 @@
 			transition: 0.3s
 			z-index: 15
 
-		&:first-child
+		&:last-child
 			border-left: 1px solid $grey
 
 		a
@@ -125,11 +140,6 @@
 					display: -ms-flex
 					display: flex
 					align-items: center
-
-.yr-parent-chevron
-	margin: 5px 5px 0 0
-	font-size: 14px
-	color: $accent
 
 // Sidebar
 
