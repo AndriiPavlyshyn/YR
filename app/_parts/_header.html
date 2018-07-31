@@ -1,84 +1,82 @@
-<header class="yr__header @@class uk-preserve-color uk-box-shadow-medium">
-	<div class="yr__navbar-container uk-box-shadow-medium" uk-sticky="animation: cls-inactive: uk-navbar-transparent uk-dark; top: 200; media: 960">
-		<nav class="uk-navbar-container">
-			<div class="uk-grid-collapse uk-grid" uk-grid>
+<header dir="ltr" class="yr__header @@class uk-preserve-color uk-box-shadow-medium" uk-sticky="animation: cls-inactive: top: 200; media: 960">
+	<div class="yr__navbar-container">
+		<nav class="uk-navbar-container yr-navbar-wrapper">
 
-				<div class="yr-burger__wrapper uk-navbar-right uk-hidden@l">
-					<a uk-toggle="target: #offcanvas-reveal" class="happy-meal yr__burger uk-navbar-toggle">
-						<span class="burger"></span>
-					</a>
-				</div>
-
-				@@include('./_header/_logo.html')
-
-				<div class="yr__navbar" uk-navbar>
-
-					@@if (nav === true) {
-					<ul class="yr__lg-nav uk-navbar-nav uk-visible@l">
-						<li>
-							<a href="#">דף_הבית</a>
-						</li>
-						<li>
-							<a href="#">אודות</a>
-						</li>
-						<li>
-							<a href="#">שרותי_המשרד
-								<i class="fa fa-chevron-down yr-parent-chevron" aria-hidden="true"></i>
-							</a>
-							<div class="uk-navbar-dropdown" uk-dropdown="offset: 3; delay-hide: 30">
-								<ul class="uk-nav uk-navbar-dropdown-nav">
-									<li>
-										<a href="#">מקרקעיןשמאי</a>
-									</li>
-									<li>
-										<a href="#">מקרקעיןשמאי</a>
-									</li>
-								</ul>
-							</div </li>
-							<li>
-								<a href="#">בלוג</a>
-							</li>
-							<li>
-								<a href="#">מהתקשורת</a>
-							</li>
-							<li>
-								<a href="#">צור_קשר</a>
-							</li>
-					</ul>
-					<!-- /uk-navbar-nav -->
-					}
-
-					<div class="yr__nav-overlay nav-overlay uk-navbar-right">
-
-						@@if (cart === true) {
-						<a class="yr__cart uk-navbar-toggle" uk-icon="cart" href="#yr__modal-cart" uk-toggle>
-							<span class="yr__cart-badge uk-badge">200</span>
+			<div dir="rtl" class="yr__header-contacts uk-visible@m">
+				<div class="header-contacts__container">
+					<img src="img/logos/phoneHeaderPng.png" alt="" class="contacts__logo">
+					<div class="contacts__number">
+						<a href="tel:">
+							<h2 class="contacts__h2">072-250-5119</h2>
 						</a>
-						} @@if (search === true) {
-						<a class="uk-navbar-toggle" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
-						}
-					</div>
-					<!-- /yr__nav-overlay -->
-
-					@@if (search === true) { @@include('./_header/_search.html') } @@if (cart === true) { @@include('./_header/_cart.html') }
-
-				</div>
-				<!-- /yr__navbar -->
-
-				<div class="yr__header-contacts uk-width-1-3@m uk-width-1-5@l uk-visible@m">
-					<div class="header-contacts__container">
-						<img src="img/logos/phoneHeaderPng.png" alt="" class="contacts__logo">
-						<div class="contacts__number">
-							<a href="tel:">
-								<h2 class="contacts__h2">072-250-5119</h2>
-							</a>
-							<p class="contacts__p">טלפון לייעוץ ראשוני 24/7</p>
-						</div>
+						<p class="contacts__p">טלפון לייעוץ ראשוני 24/7</p>
 					</div>
 				</div>
-				<!-- /yr__header-contacts -->
 			</div>
-			<!-- /uk-grid-collapse -->
+			<!-- /yr__header-contacts -->
+
+			<div class="yr__navbar" uk-navbar>
+
+				@@if (nav === true) {
+				<ul class="yr__lg-nav uk-navbar-nav uk-visible@l">
+					<li>
+						<a href="#">דף_הבית</a>
+					</li>
+					<li>
+						<a href="#">אודות</a>
+					</li>
+					<li>
+						<a href="#">שרותי_המשרד
+							<i class="fa fa-chevron-down yr-parent-chevron" aria-hidden="true"></i>
+						</a>
+						<div class="uk-navbar-dropdown" uk-dropdown="offset: 3; delay-hide: 30">
+							<ul class="uk-nav uk-navbar-dropdown-nav">
+								<li>
+									<a href="#">מקרקעיןשמאי</a>
+								</li>
+								<li>
+									<a href="#">מקרקעיןשמאי</a>
+								</li>
+							</ul>
+						</div </li>
+						<li>
+							<a href="#">בלוג</a>
+						</li>
+						<li>
+							<a href="#">מהתקשורת</a>
+						</li>
+						<li>
+							<a href="#">צור_קשר</a>
+						</li>
+				</ul>
+				<!-- /uk-navbar-nav -->
+				}
+
+				<div class="yr__nav-overlay nav-overlay uk-navbar-right">
+
+					@@if (cart === true) {
+					<a class="yr__cart uk-navbar-toggle" uk-icon="cart" href="#yr__modal-cart" uk-toggle>
+						<span class="yr__cart-badge uk-badge">200</span>
+					</a>
+					} @@if (search === true) {
+					<a class="uk-navbar-toggle" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+					}
+				</div>
+				<!-- /yr__nav-overlay -->
+
+				@@if (search === true) { @@include('./_header/_search.html') } @@if (cart === true) { @@include('./_header/_cart.html') }
+
+			</div>
+			<!-- /yr__navbar -->
+
+			@@include('./_header/_logo.html')
+
+			<div class="yr-burger__wrapper uk-navbar-right uk-hidden@l">
+				<a uk-toggle="target: #offcanvas-reveal" class="happy-meal yr__burger uk-navbar-toggle">
+					<span class="burger"></span>
+				</a>
+			</div>
+
 		</nav>
 		<!-- /uk-navbar-container -->
 	</div>

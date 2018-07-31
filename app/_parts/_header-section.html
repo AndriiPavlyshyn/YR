@@ -1,6 +1,6 @@
 <div class="yr-header__form-wrapper uk-box-shadow-medium uk-position-relative uk-hidden@xl uk-visible@m">
 	<div class="uk-container-expand">
-		<div class="yr-panel-mobile uk-grid-small uk-grid-divider uk-grid">
+		<div class="yr-panel-mobile uk-grid-small uk-grid-divider uk-grid uk-hidden">
 			<div class="yr-header-form uk-width-1-1@s uk-width-1-2@l yr-header-form--contacts">
 				<div class="contacts__title">
 					<h3 class="contacts__title-h3">לייעוץ ראשוני</h3>
@@ -47,14 +47,14 @@
 <!-- /yr-header__form-wrapper -->
 
 <!-- Header section -->
-<div class="uk-grid-collapse uk-grid" uk-grid>
-	<!-- Header info section -->
-	@@include('./_header/_header-info.html')
 
+<!-- Header info section -->
+<div dir="ltr" class="header-top-wrapper">
 	<!-- Header sidebar -->
 	@@include('./_header/_header-sidebar.html')
+
+	@@include('./_header/_header-info.html')
 </div>
-<!-- /uk-grid-collapse -->
 
 <div class="yr-mobile-contacts-bar uk-hidden@m">
 	<div class="yr-mobile__button-contacts">

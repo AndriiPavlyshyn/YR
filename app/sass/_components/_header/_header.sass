@@ -3,22 +3,44 @@
 	position: relative
 
 .yr__logo-wrapper
-	display: -webkit-flex
-	display: -ms-flex
-	display: flex
-	justify-content: flex-end
-	align-items: center
-
-	.yr-logo
-		padding: 0 20px
-		padding-top: 0
-		max-width: 100%
-		max-width: 350px
+	div
+		display: -webkit-flex
+		display: -ms-flex
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		width: 100%
+		margin: 0 30px
 
 .yr__header
 	width: 100%
 	position: relative
 	z-index: 10
+	display: -webkit-flex
+	display: -ms-flex
+	display: flex
+	background: #fff
+
+.header-top-wrapper
+	display: -webkit-flex
+	display: -ms-flex
+	display: flex
+
+.yr__navbar-container
+	width: 100% !important
+	display: -webkit-flex
+	display: -ms-flex
+	display: flex
+
+	.uk-sticky-below
+		width: 100%
+
+.yr-navbar-wrapper
+	width: 100%
+	display: -webkit-flex
+	display: -ms-flex
+	display: flex
+	background: $white
 
 .yr__burger
 	cursor: pointer
@@ -49,7 +71,7 @@
 			transition: 0.3s
 			z-index: 15
 
-		&:last-child
+		&:first-child
 			border-left: 1px solid $grey
 
 		a
@@ -188,6 +210,12 @@
 
 // Header contacts
 
+.yr-inputs-header-wrapper
+	display: -webkit-flex
+	display: -ms-flex
+	display: flex
+	flex-wrap: nowrap
+
 .yr__header-contacts
 	display: -webkit-flex
 	display: -ms-flex
@@ -195,9 +223,12 @@
 	justify-content: flex-start
 	align-items: center
 	overflow: hidden
+	width: 22vw
+	max-width: 22vw
+	min-width: 22vw
 
 .header-contacts__container
-	padding: 15px
+	margin-right: 15px
 	display: -webkit-flex
 	display: -ms-flex
 	display: flex
@@ -206,13 +237,14 @@
 
 .contacts__logo
 	margin-left: 15px
+	max-height: 50px
 
 .contacts__h2,
 .contacts__p
 	margin: 0
 
 .contacts__h2
-	font-size: $h2
+	font-size: 2rem
 	font-weight: 900
 	color: $accent
 	line-height: 0.9
