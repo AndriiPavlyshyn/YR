@@ -334,3 +334,59 @@
 
 .page-content-wrapper
   padding-bottom: 150px
+
+.pagination
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  align-items: center
+  margin: 35px 0
+
+  .next
+    padding: 2px 20px !important
+    padding-left: 30px !important
+    border-radius: 100px
+    background: #8bce41
+    color: #fff !important
+    font-size: 1.125rem !important
+    position: relative
+
+    &::after
+      content: "\f053"
+      font-family: "Font Awesome 5 Free"
+      font-weight: bold
+      position: absolute
+      top: 50%
+      left: 20px
+      font-size: 0.6rem
+      transform: translate(-50%, -50%)
+      color: #fff
+      transition: 0.5s
+
+  .page-numbers
+    color: #565658
+    padding: 0 10px
+    margin: 0 10px
+    font-size: 0.9  rem
+
+    &:nth-child(3)
+      padding-left: 0
+      margin-left: 0
+
+      &::after
+        content: "..."
+        margin: 0 20px
+        margin-right: 40px
+
+  .page-numbers.current
+    width: 15px
+    height: 15px
+    padding: 7px
+    border: 2px solid $accent
+    border-radius: 100px
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    align-items: center
+    justify-content: center
+    color: #565658
