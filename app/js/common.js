@@ -57,6 +57,10 @@ jQuery(document).ready(function() {
 
 	UIkit.accordion(element, options);
 
+	// Dropdown
+
+	UIkit.dropdown(element, options);
+
 });
 
 // Burger
