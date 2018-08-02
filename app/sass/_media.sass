@@ -77,10 +77,19 @@
 
 @media screen and (max-width: 1200px)
 
+	.tooltip-form-wrapper
+		flex-direction: column
+		padding-top: 20px
+
+	.project-border
+		border: none
+		padding: 0
+
 	.yr-button,
 	.yr-input__wrapper-main,
 	.page-button,
-	.page-input
+	.page-input,
+	.tooltip-form-wrapper .yr-input__wrapper
 		min-height: 44px
 
 	.blog-wrapper
@@ -179,7 +188,7 @@
 	.yr-advantage
 
 	  &:nth-child(2)
-	    border-left: 1px solid #c6e49f
+	    border-left: 1px solid #85c83b
 
 @media screen and (max-width: 960px)
 
@@ -412,6 +421,19 @@
 		width: 100%
 
 @media screen and (max-width: 640px)
+
+	.tooltip-form-title
+		flex-direction: column
+
+	.tooltip-form
+		max-height: 100%
+		height: auto
+		flex-direction: column
+
+		.yr-input__wrapper
+			height: 44px
+			margin: 0
+			margin-bottom: 10px
 
 	.article__a--decorated
 		font-size: 1rem
