@@ -11,10 +11,27 @@
 .yr-header-form
   background: rgba($white-milk, 0.9)
   padding: 25px 0
+  width: 55%
+  position: relative
+
+  &:first-child
+    width: 45%
+
+    &::after
+      content: ""
+      width: 1px
+      height: 60%
+      background: $accent
+      position: absolute
+      left: 0
+
+  .header__contacts-form-h2
+    margin: 0
+    margin-right: 20px
 
 .yr-input__wrapper
-  max-width: 8.7vw
   margin-left: 10px
+  max-width: 160px
 
   .uk-form-icon
     img
@@ -26,10 +43,9 @@
 
 .yr-input
   border-radius: 50px
-  padding: 0 0 0 10px
   border: 1px solid $white
   font-size: $p
-  height: 2.3vw
+  height: 100%
   text-align: right
 
   &:focus
@@ -58,22 +74,26 @@
 
 .yr-button
   border-radius: 50px
-  height: 2.3vw
+  height: 100%
   background: linear-gradient(to top, #83c839, #a0ce54)
   color: $white
   transition: 0.5s
   font-size: $p
-  padding: 0
-  width: 8.7vw
+  padding: 0 20px
+  display: inline-block
+  position: relative
   display: -webkit-flex
   display: -ms-flex
   display: flex
   align-items: center
+  position: relative
   justify-content: center
+  vertical-align: middle
+  -webkit-backface-visibility: hidden
 
   i
-    margin-right: 10px
     position: relative
+    margin-right: 10px
     transition: 0.5s
 
   &:hover
@@ -84,3 +104,7 @@
     i
       transform: translate(-90%, 0)
       transition: 0.5s
+
+.yr-button--header
+  max-width: 160px
+  width: 30%

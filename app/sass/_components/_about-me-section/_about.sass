@@ -94,7 +94,6 @@
 
   .yr-about-child
     position: relative
-    z-index: 5
     align-items: center
 
 .yr-check-p
@@ -103,7 +102,6 @@
 .yr-about-heading
   width: 90%
   position: relative
-  z-index: 5
 
 .yr-check-list
   width: 100%
@@ -156,7 +154,7 @@
     width: 3px
     background: $accent
     height: 60%
-    max-height: 33px  
+    max-height: 33px
     position: absolute
     right: 0
     top: 50%
@@ -226,12 +224,19 @@
     margin: 10px
 
 .uk-button.yr-button.yr-button--about
-  height: 55px
+  height: 3vw
+  max-height: 55px
   display: -webkit-flex
   display: -ms-flex
   display: flex
   align-items: center
   justify-content: reverse
+
+.yr-main-header-form-wrapper
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  width: 100%
 
 .yr-test
   height: 100%
