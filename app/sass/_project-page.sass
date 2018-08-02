@@ -1,0 +1,182 @@
+.float-sidebar-wrapper--small
+  width: 1.8vw
+  margin-right: 0
+  margin-left: 30px
+
+  .yr-social
+    width: 1.8vw
+    height: 1.8vw
+
+.project-bullet
+  position: relative
+  margin-right: 35px
+
+  .article__a--decorated
+    font-size: 1.3125rem
+
+  &::after
+    content: ""
+    position: absolute
+    right: -35px
+    top: 0
+    height: 30px
+    width: 25px
+    background-image: url(../img/icons/black-bullet.png)
+    background-repeat: no-repeat
+
+.project-list
+  list-style-type: none
+  counter-reset: item
+  margin-bottom: 70px
+
+  li
+    position: relative
+    margin-bottom: 20px
+
+    &::after
+      content: counter(item) '.'
+      counter-increment: item
+      border: 2px solid $accent
+      position: absolute
+      right: -35px
+      height: 25px
+      font-size: 1.1875rem
+      display: -webkit-flex
+      display: -ms-flex
+      display: flex
+      align-items: center
+      justify-content: center
+      top: 0
+      width: 25px
+      border-radius: 50px
+
+.project-tooltip
+  padding: 30px
+  background: #f4faec
+  border: solid 3px #d7edb7
+  position: relative
+  margin-bottom: 50px
+
+  .article__p
+    border-bottom: solid 1px #d7edb7
+    margin-bottom: 0
+    padding-bottom: 25px
+
+.project__h3
+  margin: 0
+  margin-bottom: 20px
+  font-weight: 900
+  line-height: normal
+  color: $accent
+  font-size: 1.875rem
+
+.project-arrow-wrapper
+  position: absolute
+  top: -19px
+
+.arrow
+  width: 0
+  height: 0
+  border-radius: 50px
+  display: inline-block
+  position: relative
+
+.arrow::after
+  content: ""
+  width: 0
+  height: 0
+  position: absolute
+
+.arrow-up
+  border-left: 20px solid transparent
+  border-right: 20px solid transparent
+  border-bottom: 20px solid #d7edb7
+
+.arrow-up::after
+  top: 5px
+  border-left: 20px solid transparent
+  border-right: 20px solid transparent
+  border-bottom: 20px solid #f4faec
+  right: -20px
+
+.tooltip-form-wrapper
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  align-items: center
+
+  .yr-button
+    padding: 0 50px
+
+  .yr-input__wrapper
+    max-width: 100%
+
+    input
+      border-color: #e2e2e2
+
+    .uk-form-icon
+      img
+        height: auto !important
+
+.tooltip-form
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  max-height: 46px
+  height: 3vw
+  padding-right: 20px
+
+.project-border
+  padding-left: 20px
+  border-left: 1px solid #e9eef3
+
+.tooltip__img-wrapper
+  height: 80px
+  width: 80px
+  overflow: hidden
+  border-radius: 100px
+
+  .tooltip__img
+    width: 100%
+
+.tooltip-form-title
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  align-items: center
+  margin-bottom: 15px
+
+  img
+    width: 20px
+    height: 20px
+    margin: 0 10px
+
+.tooltip-form-title__h4
+  font-size: 1.625rem
+  color: #1f2b2f
+  line-height: normal
+  margin: 0
+  margin-right: 10px
+
+.tooltip-form-title__h4--bold
+  font-weight: 700
+  padding-right: 20px
+  margin: 0
+
+.tooltip-number
+  font-size: 1.875rem
+  line-height: 0.9
+  margin: 0
+  font-weight: 900
+  color: $accent
+
+.project-grid
+  .blog-item__img
+    height: 170px
+
+  .page__h3--link
+    font-size: 1.3125rem
+
+  .yr-modal-p-wrapper
+    background: #f6f6f6
+    padding-right: 10px
