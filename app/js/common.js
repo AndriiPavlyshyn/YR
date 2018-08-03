@@ -121,3 +121,11 @@ $('.arrow--testi-next').on('click', function() {
 $('.arrow--testi-prev').on('click', function() {
 	$('.testimonial-carousel').slick('slickPrev');
 });
+
+
+// $('.test').focus(function() {
+// 	$(this).parent().removeClass('contacts__wrapper--require');
+// });
+// $('.test').focusout(function() {
+// 	$(this).parent().addClass('contacts__wrapper--require');
+// });
