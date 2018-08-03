@@ -7,49 +7,6 @@
     width: 1.8vw
     height: 1.8vw
 
-.project-bullet
-  position: relative
-  margin-right: 35px
-
-  .article__a--decorated
-    font-size: 1.3125rem
-
-  &::after
-    content: ""
-    position: absolute
-    right: -35px
-    top: 0
-    height: 30px
-    width: 25px
-    background-image: url(../img/icons/black-bullet.png)
-    background-repeat: no-repeat
-
-.project-list
-  list-style-type: none
-  counter-reset: item
-  margin-bottom: 70px
-
-  li
-    position: relative
-    margin-bottom: 20px
-
-    &::after
-      content: counter(item) '.'
-      counter-increment: item
-      border: 2px solid $accent
-      position: absolute
-      right: -35px
-      height: 25px
-      font-size: 1.1875rem
-      display: -webkit-flex
-      display: -ms-flex
-      display: flex
-      align-items: center
-      justify-content: center
-      top: 0
-      width: 25px
-      border-radius: 50px
-
 .project-tooltip
   padding: 30px
   background: #f4faec
@@ -144,7 +101,7 @@
   display: -ms-flex
   display: flex
   align-items: center
-  margin-bottom: 15px
+  margin: 15px 0
 
   img
     width: 20px
@@ -180,3 +137,79 @@
   .yr-modal-p-wrapper
     background: #f6f6f6
     padding-right: 10px
+
+.article-content--container
+  strong
+    font-weight: 700
+    color: #1f2b2f
+    line-height: normal
+    font-size: 1.3125rem
+    margin-bottom: 25px
+    display: block
+    direction: ltr
+    text-align: right
+
+  p
+    font-size: 1.1875rem
+    color: #3d3d3d
+    line-height: 1.47
+    margin-bottom: 25px
+
+  a
+    font-size: 1.625rem
+    color: $accent
+    padding-bottom: 5px
+    border-bottom: 1px solid $accent
+    margin: 0
+    font-weight: 700
+    line-height: normal
+    display: inline-block
+    margin-bottom: 25px
+    direction: ltr
+
+  ul
+    position: relative
+    margin-right: 35px
+    list-style: none
+    padding-right: 0
+
+    li
+      a
+        font-size: 1.3125rem
+        margin-bottom: 0
+
+    &::after
+      content: ""
+      position: absolute
+      right: -35px
+      top: 0
+      height: 30px
+      width: 25px
+      background-image: url(../img/icons/black-bullet.png)
+      background-repeat: no-repeat
+
+  ol
+    list-style-type: none
+    counter-reset: item
+    margin-bottom: 70px
+
+    li
+      position: relative
+      margin-bottom: 20px
+
+      &::after
+        content: counter(item) '.'
+        counter-increment: item
+        border: 2px solid $accent
+        position: absolute
+        right: -35px
+        height: 25px
+        font-size: 1.1875rem
+        display: -webkit-flex
+        display: -ms-flex
+        display: flex
+        align-items: center
+        justify-content: center
+        top: 0
+        width: 25px
+        border-radius: 50px
