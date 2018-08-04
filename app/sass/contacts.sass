@@ -1,3 +1,5 @@
+@import "vars"
+
 .map
   background: #ccc
   min-height: 150px
@@ -27,7 +29,7 @@
     margin-top: 0
 
 .contacts__form
-  padding-bottom: 100px
+  padding-bottom: 150px
 
   .contacts__wrapper--require
     &::after
@@ -58,6 +60,9 @@
       margin: 10px 0
       box-shadow: none
 
+      &:focus
+        border: 1px solid $accent
+
       &::placeholder
         color: #000
         font-size: 0.9rem
@@ -66,12 +71,15 @@
 
     textarea
       resize: none
-      border: none
+      border-color: #f6f6f6
       background: #f6f6f6
       width: 80%
       padding: 15px
       padding-right: 25px
       height: 110px
+
+      &:focus
+        border-color: $accent
 
       &::placeholder
         color: #000
