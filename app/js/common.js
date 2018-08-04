@@ -123,9 +123,11 @@ $('.arrow--testi-prev').on('click', function() {
 });
 
 
-// $('.test').focus(function() {
-// 	$(this).parent().removeClass('contacts__wrapper--require');
-// });
-// $('.test').focusout(function() {
-// 	$(this).parent().addClass('contacts__wrapper--require');
-// });
+$(document).mouseup(function (e){
+	var burger = $(".burger")
+	var div = $("#offcanvas-reveal");
+	if (!div.is(e.target)
+			&& div.has(e.target).length === 0) {
+			burger.removeClass("i-hate-burger")
+	}
+});
