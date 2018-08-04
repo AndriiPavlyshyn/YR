@@ -131,7 +131,7 @@ $(document).mouseup(function(e) {
 });
 
 (function cropTitle() {
-	$(".testimonial__p-wrapper").each(function() {
+	$(".testimonial__p-wrapper, .milon__p-wrapper").each(function() {
 		var $title = $(this).find("p");
 
 		while ($title.height() > $(this).height()) {
