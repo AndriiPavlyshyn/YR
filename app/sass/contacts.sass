@@ -56,6 +56,7 @@
       width: 80%
       font-size: 0.9rem
       margin: 10px 0
+      box-shadow: none
 
       &::placeholder
         color: #000
@@ -114,6 +115,28 @@
     display: flex
     padding-bottom: 10px
     border-bottom: solid 1px #d7d7d7
+    align-items: center
+
+    &:last-child
+      p
+        width: 100%
+        display: -webkit-flex
+        display: -ms-flex
+        display: flex
+        align-items: center
+        margin-left: 20px
+
+    .yr-social-bar
+      margin: 0
+      display: -webkit-flex
+      display: -ms-flex
+      display: flex
+      align-items: center
+
+      .yr-social
+        margin-bottom: 0
+        height: 35px
+        width: 35px
 
 .conatcts__icon
   margin-left: 20px
@@ -128,4 +151,4 @@
   justify-content: center
 
   img
-    height: 23px
+    max-height: 30px
