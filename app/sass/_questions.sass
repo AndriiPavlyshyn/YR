@@ -1,0 +1,48 @@
+.questions-accordion
+
+  li
+    border-bottom: 1px solid #f6f6f6
+    padding: 10px 0
+    margin: 0 !important
+
+  li.uk-open
+    .uk-accordion-title
+      color: $accent
+
+      &::after
+        color: $accent
+        content: "\f077"
+
+  .uk-accordion-title
+    color: #1f2b2f
+    font-size: 1.40625rem
+    font-weight: 700
+    padding-right: 35px
+    position: relative
+    line-height: 3rem
+    transition: 0.5s
+
+    &:hover
+      color: $accent
+      transition: 0.5s
+
+    &::after
+      top: 50%
+      color: $accent
+      right: 0
+      transform: translate(0, -50%)
+      font-family: "Font Awesome 5 Free"
+      font-weight: 900
+      content: "\f078"
+      font-size: 0.8rem
+      position: absolute
+      height: 20px
+      width: 20px
+      border: 2px solid $accent
+      border-radius: 100px
+      display: -webkit-flex
+      display: -ms-flex
+      display: flex
+      align-items: center
+      justify-content: center
+      background-image: none

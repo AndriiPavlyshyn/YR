@@ -122,12 +122,20 @@ $('.arrow--testi-prev').on('click', function() {
 	$('.testimonial-carousel').slick('slickPrev');
 });
 
-
-$(document).mouseup(function (e){
+$(document).mouseup(function(e) {
 	var burger = $(".burger")
 	var div = $("#offcanvas-reveal");
-	if (!div.is(e.target)
-			&& div.has(e.target).length === 0) {
-			burger.removeClass("i-hate-burger")
+	if (!div.is(e.target) && div.has(e.target).length === 0) {
+		burger.removeClass("i-hate-burger")
 	}
 });
+
+(function cropTitle() {
+	$(".testimonial__p-wrapper, .milon__p-wrapper").each(function() {
+		var $title = $(this).find("p");
+
+		while ($title.height() > $(this).height()) {
+			$title.text($title.text().split(" ").slice(0, $title.text().split(" ").length - 1).join(" ") + "...");
+		}
+	});
+})();
