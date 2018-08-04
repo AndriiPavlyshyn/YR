@@ -1,0 +1,141 @@
+@@include('./_parts/_head.html', { "pagetitle": "Contacts", "bodyclass": "" })
+
+<!-- Custom HTML -->
+
+@@include('./_parts/_header.html', { "search": false, "cart": false, "nav": true, "class": "" })
+
+<section class="page-content-wrapper page-content-wrapper--contacts">
+	<div class="page__wrapper uk-grid uk-grid-collapse" uk-grid>
+		<div class="contacts__content uk-width-expand@m">
+			<div class="contacts-container">
+				<div class="uk-grid uk-grid-collapse contacts__grid">
+					<div class="breadcrumbs breadcrumbs--article">
+						<span>
+							<span>
+								<a href="#">
+									<img src="img/icons/house-bread.png" alt="">
+								</a>
+								<span>
+									<a href="#">עמוד הבית</a>
+									<i class="breadcrumbs__i fas fa-chevron-left"></i>
+									<span class="breadcrumb_last">בלוג</span>
+								</span>
+							</span>
+						</span>
+					</div>
+					<div class="cotntacts-forms-wrapper uk-child-width-1-2@l uk-grid" uk-grid>
+						<div class="contacts__form-wrapper">
+							<h1 class="article-h1">צור קשר</h1>
+							<div class="article__p">מלאו טופס ליצירת קשר משמאל נחזור אליכם מיד כשנתפנה!</div>
+							<form class="contacts__form">
+								<div class="contacts__wrapper">
+									<input placeholder="* שם מלא" name="name" type="text">
+								</div>
+								<div class="contacts__wrapper">
+									<input placeholder="* דוא”ל" name="name" type="text">
+								</div>
+								<div class="contacts__wrapper">
+									<input placeholder="* טלפון" name="name" type="text">
+								</div>
+								<div class="contacts__wrapper">
+									<input placeholder="נושא" name="name" type="text">
+								</div>
+								<div class="contacts__wrapper">
+									<textarea placeholder="הודעה שלך:"></textarea>
+								</div>
+								<div class="contacts__button-wrapper">
+									<div>
+										<button class="uk-button yr-button yr-button--contacts yr-button--about">שלח
+											<i class="fas fa-angle-left"></i>
+										</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="contacts__form-wrapper contacts__form-wrapper--atributes">
+							<h1 class="article-h1">פרטי התקשרות</h1>
+							<ul class="uk-list contacts__list">
+								<li>
+									<div class="conatcts__icon">
+										<img src="img/icons/address_footer.png" alt="">
+									</div>
+									<div class="yr-footer-p-container contacts__p-wrapper">
+										<div class="yr-footer-p-wrapper">
+											<p class="yr-footer-p--light yr-footer-p--green">משרד ירושלים:</p>
+											<p class="yr-footer-p--light">הר אדר, מבוא הרכס 43</p>
+										</div>
+										<div class="yr-footer-p-wrapper">
+											<p class="yr-footer-p--light yr-footer-p--green">משרד תל אביב:</p>
+											<p class="yr-footer-p--light">רמת החייל , ראול לנברג 2</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="conatcts__icon">
+										<img src="img/icons/phone-icon.png" alt="">
+									</div>
+									<div class="yr-footer-p-container contacts__p-wrapper">
+										<div class="yr-footer-p-wrapper">
+											<p class="yr-footer-p--light yr-footer-p--green">טלפון:</p>
+											<p class="yr-footer-p--light">072-250-5119</p>
+										</div>
+										<div class="yr-footer-p-wrapper">
+											<p class="yr-footer-p--light yr-footer-p--green">נייד:</p>
+											<p class="yr-footer-p--light">054-226-6781</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="conatcts__icon">
+										<img src="img/icons/mail-icon.png" alt="">
+									</div>
+									<div class="yr-footer-p-container contacts__p-wrapper">
+										<div class="yr-footer-p-wrapper">
+											<p class="yr-footer-p--light yr-footer-p--green">אימייל:</p>
+											<p class="yr-footer-p--light">yyrr@zahav.net.il</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="conatcts__icon">
+										<img src="img/icons/printer.png" alt="">
+									</div>
+									<div class="yr-footer-p-container contacts__p-wrapper">
+										<div class="yr-footer-p-wrapper">
+											<p class="yr-footer-p--light yr-footer-p--green">פקס:</p>
+											<p class="yr-footer-p--light">153-542-266-781</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="conatcts__icon">
+										<img src="img/icons/planet.png" alt="">
+									</div>
+									<div class="yr-footer-p-container contacts__p-wrapper">
+										<div class="yr-footer-p-wrapper">
+											<p class="yr-footer-p--light">רשתות חברתיות</p>
+											<div class="yr-social-bar yr-social-bar--footer">
+												<a href="#" class="yr-social">
+													<i class="fab fa-youtube"></i>
+												</a>
+												<a href="#" class="yr-social">
+													<i class="fab fa-facebook-f"></i>
+												</a>
+												<a href="#" class="yr-social">
+													<i class="fab fa-linkedin-in"></i>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="map uk-width-1-3@m"></div>
+	</div>
+</section>
+
+@@include('./_parts/_footer.html')
