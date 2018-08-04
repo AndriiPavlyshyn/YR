@@ -7,19 +7,28 @@
 
   li.uk-open
     .uk-accordion-title
+      color: $accent
+
       &::after
+        color: $accent
         content: "\f077"
 
   .uk-accordion-title
-    color: $accent
+    color: #1f2b2f
     font-size: 1.40625rem
     font-weight: 700
     padding-right: 35px
     position: relative
     line-height: 3rem
+    transition: 0.5s
+
+    &:hover
+      color: $accent
+      transition: 0.5s
 
     &::after
       top: 50%
+      color: $accent
       right: 0
       transform: translate(0, -50%)
       font-family: "Font Awesome 5 Free"
