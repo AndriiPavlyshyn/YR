@@ -71,7 +71,7 @@ gulp.task('css-libs', ['sass'], function() {
 });
 
 gulp.task('css-redirect', function() {
-	return gulp.src(['app/css/uikit-rtl.min.css', 'app/css/slick-theme.css', 'app/css/slick.css'])
+	return gulp.src(['app/css/uikit-rtl.min.css', 'app/css/slick-theme.css', 'app/css/slick.css', 'app/css/includes.css'])
 		.pipe(gulp.dest('builder/css')) // Выгружаем в папку
 		.pipe(browserSync.reload({stream: true}))
 });
