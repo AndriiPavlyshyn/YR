@@ -117,7 +117,8 @@ gulp.task('build', ['clean', 'img', 'sass', 'scripts-min', 'js-concat'], functio
 				'builder/css/main.css',
 				'builder/css/uikit-rtl.min.css',
 				'builder/css/slick-theme.css',
-				'builder/css/slick.css'
+				'builder/css/slick.css',
+				'builder/css/includes.css',
 				])
 		.pipe(gulp.dest('dist/css'))
 
